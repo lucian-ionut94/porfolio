@@ -286,58 +286,50 @@ function TechMarquee() {
   );
 }
 
-const ROTATE_TEXT = "Lets Talk • Lets Talk • ";
-
 function RotatingBadge() {
-  const letters = Array.from(ROTATE_TEXT);
-  const total = letters.length;
-
   return (
     <Link
       href="/contact"
-      className="bg-zinc-900 absolute right-3 bottom-3 sm:-right-[20px] sm:-bottom-[20px] grid aspect-square h-fit w-[28%] sm:w-[35%] min-w-[90px] sm:min-w-[110px] max-w-[120px] sm:max-w-[150px] place-content-center rounded-full p-2 shadow-lg"
+      className="group bg-zinc-900 border border-zinc-800 hover:border-lime-400/30 absolute right-3 bottom-3 sm:-right-[20px] sm:-bottom-[20px] aspect-square w-[28%] sm:w-[35%] min-w-[90px] sm:min-w-[110px] max-w-[120px] sm:max-w-[150px] rounded-full shadow-lg flex items-center justify-center transition-all duration-300"
+      aria-label="Let's Talk"
     >
-      {/* Inner border circle + arrow */}
-      <div className="flex items-center justify-center border border-zinc-700 absolute h-[50%] w-[50%] translate-x-1/2 translate-y-1/2 rounded-full">
+      {/* SVG circular text — reliable & crisp */}
+      <svg
+        viewBox="0 0 100 100"
+        className="absolute inset-0 w-full h-full animate-[spin_12s_linear_infinite]"
+        aria-hidden="true"
+      >
+        <defs>
+          <path
+            id="textCircle"
+            d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
+          />
+        </defs>
+        <text fontSize="9.2" fill="white" letterSpacing="1.8" fontFamily="sans-serif">
+          <textPath href="#textCircle">
+            {"Lets Talk • Lets Talk • "}
+          </textPath>
+        </text>
+      </svg>
+
+      {/* Center arrow */}
+      <div className="w-[42%] h-[42%] rounded-full border border-zinc-700 group-hover:border-lime-400/40 flex items-center justify-center transition-colors duration-300 z-10">
         <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="18"
-          height="18"
+          width="15"
+          height="15"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          strokeWidth="1"
+          strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="stroke-current text-white"
+          className="text-white group-hover:text-lime-400 transition-colors duration-300"
           aria-hidden="true"
         >
           <path d="M7 7h10v10" />
           <path d="M7 17 17 7" />
         </svg>
       </div>
-
-      {/* Spinning text */}
-      <div
-        className="relative leading-none font-normal uppercase animate-[spin_20s_linear_infinite]"
-        aria-hidden="true"
-      >
-        {letters.map((letter, i) => (
-          <span
-            key={i}
-            className="absolute left-1/2 top-1/2 inline-block text-white"
-            style={{
-              fontSize: "0.8rem",
-              transform: `translate(-50%, -50%) rotate(${(360 / total) * i}deg) translateY(-4ch)`,
-              transformOrigin: "center center",
-            }}
-          >
-            {letter}
-          </span>
-        ))}
-      </div>
-
-      <span className="sr-only">{ROTATE_TEXT}</span>
     </Link>
   );
 }
