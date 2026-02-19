@@ -305,9 +305,9 @@ function RotatingBadge() {
             d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
           />
         </defs>
-        <text fontSize="9.2" fill="white" letterSpacing="1.8" fontFamily="sans-serif">
+        <text fontSize="8.5" fill="white" letterSpacing="2" fontFamily="sans-serif">
           <textPath href="#textCircle">
-            {"Lets Talk • Lets Talk • "}
+            {"Let's Talk • Let's Talk • Let's Talk • "}
           </textPath>
         </text>
       </svg>
