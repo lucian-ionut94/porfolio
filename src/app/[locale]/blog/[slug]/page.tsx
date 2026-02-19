@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { getArticleBySlug, getAllArticleSlugsForLocale, getAllArticles } from "@/lib/queries/articles";
 import ArticlePageContent from "@/components/ArticlePageContent";
-import { siteUrl } from "@/lib/site-url";
+import { siteUrl, pageAlternates } from "@/lib/site-url";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -30,9 +30,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description = (isRo ? article.metaDescRo : article.metaDescEn) || (isRo ? article.excerpt_ro : article.excerpt_en);
   const ogImage = article.featureImage || "/opengraph-image";
 
+  const roSlug = article.slugRo || article.slug;
+  const enSlug = article.slugEn || article.slug;
+
   return {
     title,
     description,
+    alternates: {
+      canonical: siteUrl(locale, `/blog/${slug}`),
+      languages: {
+        ro: siteUrl("ro", `/blog/${roSlug}`),
+        en: siteUrl("en", `/blog/${enSlug}`),
+      },
+    },
     openGraph: {
       title,
       description,

@@ -8,7 +8,7 @@ import {
   getAdjacentProjects,
 } from "@/lib/queries/projects";
 import ProjectDetailContent from "@/components/ProjectDetailContent";
-import { siteUrl } from "@/lib/site-url";
+import { siteUrl, pageAlternates } from "@/lib/site-url";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -34,9 +34,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description = (isRo ? project.metaDescRo : project.metaDescEn) || (isRo ? project.description_ro : project.description_en);
   const ogImage = project.featureImage || "/opengraph-image";
 
+  const roSlug = project.slugRo || project.slug;
+  const enSlug = project.slugEn || project.slug;
+
   return {
     title,
     description,
+    alternates: {
+      canonical: siteUrl(locale, `/portfolio/${slug}`),
+      languages: {
+        ro: siteUrl("ro", `/portfolio/${roSlug}`),
+        en: siteUrl("en", `/portfolio/${enSlug}`),
+      },
+    },
     openGraph: {
       title,
       description,

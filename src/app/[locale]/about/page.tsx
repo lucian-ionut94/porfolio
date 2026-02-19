@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import AboutPageContent from "@/components/AboutPageContent";
 import { getPageSeo } from "@/lib/queries/page-seo";
-import { siteUrl } from "@/lib/site-url";
+import { siteUrl, pageAlternates } from "@/lib/site-url";
 import { getAllExperiences } from "@/lib/queries/experiences";
 import { getSiteSettings } from "@/lib/queries/site-settings";
 
@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     ...(title && { title }),
     ...(description && { description }),
+    alternates: pageAlternates(locale, "/about"),
     openGraph: {
       ...(title && { title }),
       ...(description && { description }),

@@ -11,6 +11,17 @@ type Locale = (typeof routing.locales)[number];
  *  Default locale (ro) → no prefix: /despre
  *  Other locales (en)  → with prefix: /en/about
  */
+/** Generates alternates (canonical + hreflang) for a given path. */
+export function pageAlternates(locale: string, path: string = "") {
+  return {
+    canonical: siteUrl(locale, path),
+    languages: {
+      ro: siteUrl("ro", path),
+      en: siteUrl("en", path),
+    },
+  };
+}
+
 export function siteUrl(locale: string, path: string = ""): string {
   if (!path) {
     const prefix = locale === DEFAULT_LOCALE ? "" : `/${locale}`;

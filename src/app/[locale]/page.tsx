@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import { getAllProjects } from "@/lib/queries/projects";
 import { getAllArticles } from "@/lib/queries/articles";
 import { getPageSeo } from "@/lib/queries/page-seo";
+import { pageAlternates } from "@/lib/site-url";
 import { getAllTestimonials } from "@/lib/queries/testimonials";
 import { getSiteSettings } from "@/lib/queries/site-settings";
 
@@ -36,6 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description,
+    alternates: pageAlternates(locale),
     ...(seo.ogImage && {
       openGraph: { images: [{ url: seo.ogImage, width: 1200, height: 630 }] },
       twitter: { card: "summary_large_image" as const, images: [seo.ogImage] },
