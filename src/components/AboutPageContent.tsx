@@ -293,26 +293,25 @@ function RotatingBadge() {
       className="group bg-zinc-900 border border-zinc-800 hover:border-lime-400/30 absolute right-3 bottom-3 sm:-right-[20px] sm:-bottom-[20px] aspect-square w-[28%] sm:w-[35%] min-w-[90px] sm:min-w-[110px] max-w-[120px] sm:max-w-[150px] rounded-full shadow-lg flex items-center justify-center transition-all duration-300"
       aria-label="Let's Talk"
     >
-      {/* SVG circular text — reliable & crisp */}
       <svg
         viewBox="0 0 100 100"
-        className="absolute inset-0 w-full h-full animate-[spin_12s_linear_infinite]"
+        className="absolute inset-0 w-full h-full animate-[spin_10s_linear_infinite]"
         aria-hidden="true"
       >
         <defs>
           <path
-            id="textCircle"
+            id="tc"
             d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
           />
         </defs>
-        <text fontSize="8.5" fill="white" letterSpacing="2" fontFamily="sans-serif">
-          <textPath href="#textCircle">
-            {"Let's Talk • Let's Talk • Let's Talk • "}
+        {/* textLength=232 = circumference of r=37 circle, fills path exactly */}
+        <text fontSize="9" fill="white" fontFamily="sans-serif" fontWeight="500">
+          <textPath href="#tc" textLength="232" lengthAdjust="spacing">
+            {"LET'S TALK \u2022 LET'S TALK \u2022 "}
           </textPath>
         </text>
       </svg>
 
-      {/* Center arrow */}
       <div className="w-[42%] h-[42%] rounded-full border border-zinc-700 group-hover:border-lime-400/40 flex items-center justify-center transition-colors duration-300 z-10">
         <svg
           width="15"
