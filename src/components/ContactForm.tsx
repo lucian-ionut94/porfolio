@@ -1,13 +1,29 @@
 "use client";
 
-import { useState } from "react";
-import { useTranslations } from "next-intl";
+import { useState, useEffect } from "react";
+import { useTranslations, useLocale } from "next-intl";
 import emailjs from "@emailjs/browser";
 import Stepper from "./reactbits/Stepper";
 import { motion } from "framer-motion";
 
+declare global {
+  interface Window {
+    grecaptcha: {
+      ready: (cb: () => void) => void;
+      execute: (siteKey: string, options: { action: string }) => Promise<string>;
+    };
+  }
+}
+
+interface FormErrors {
+  name?: string;
+  email?: string;
+  message?: string;
+}
+
 export default function ContactForm() {
   const t = useTranslations("contact");
+  const locale = useLocale();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -18,9 +34,57 @@ export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
   const [sendError, setSendError] = useState<string | null>(null);
+  const [errors, setErrors] = useState<FormErrors>({});
+
+  useEffect(() => {
+    const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
+    if (!siteKey) return;
+    const script = document.createElement("script");
+    script.src = `https://www.google.com/recaptcha/api.js?render=${siteKey}`;
+    script.async = true;
+    document.head.appendChild(script);
+    return () => {
+      if (document.head.contains(script)) document.head.removeChild(script);
+    };
+  }, []);
 
   const update = (field: string, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
+    setErrors((prev) => {
+      if (!(field in prev)) return prev;
+      const next = { ...prev };
+      delete next[field as keyof FormErrors];
+      return next;
+    });
+  };
+
+  const ERR = {
+    name:
+      locale === "ro"
+        ? "Numele trebuie să aibă cel puțin 2 caractere"
+        : "Name must be at least 2 characters",
+    email:
+      locale === "ro"
+        ? "Adresă de email invalidă"
+        : "Invalid email address",
+    message:
+      locale === "ro"
+        ? "Mesajul trebuie să aibă cel puțin 10 caractere"
+        : "Message must be at least 10 characters",
+  };
+
+  const validateStep = (step: number): boolean => {
+    const newErrors: FormErrors = {};
+    if (step === 0) {
+      if (formData.name.trim().length < 2) newErrors.name = ERR.name;
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email.trim()))
+        newErrors.email = ERR.email;
+    }
+    if (step === 2) {
+      if (formData.message.trim().length < 10) newErrors.message = ERR.message;
+    }
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
   };
 
   const projectTypes = [
@@ -38,8 +102,10 @@ export default function ContactForm() {
     { key: "enterprise", label: t("budgets.enterprise") },
   ];
 
-  const inputClasses =
-    "w-full px-4 py-3 rounded-xl bg-surface border border-border text-foreground text-sm placeholder:text-muted/50 focus:outline-none focus:border-primary/50 transition-colors";
+  const input = (hasError?: boolean) =>
+    `w-full px-4 py-3 rounded-xl bg-surface border text-foreground text-sm placeholder:text-muted/50 focus:outline-none focus:border-primary/50 transition-colors ${
+      hasError ? "border-error/60" : "border-border"
+    }`;
 
   const steps = [
     {
@@ -54,9 +120,12 @@ export default function ContactForm() {
               type="text"
               value={formData.name}
               onChange={(e) => update("name", e.target.value)}
-              className={inputClasses}
+              className={input(!!errors.name)}
               placeholder="John Doe"
             />
+            {errors.name && (
+              <p className="mt-1.5 text-xs text-error">{errors.name}</p>
+            )}
           </div>
           <div>
             <label className="block text-sm font-medium text-muted mb-2">
@@ -66,9 +135,12 @@ export default function ContactForm() {
               type="email"
               value={formData.email}
               onChange={(e) => update("email", e.target.value)}
-              className={inputClasses}
+              className={input(!!errors.email)}
               placeholder="john@example.com"
             />
+            {errors.email && (
+              <p className="mt-1.5 text-xs text-error">{errors.email}</p>
+            )}
           </div>
         </div>
       ),
@@ -130,9 +202,12 @@ export default function ContactForm() {
           <textarea
             value={formData.message}
             onChange={(e) => update("message", e.target.value)}
-            className={`${inputClasses} min-h-[160px] resize-none`}
+            className={`${input(!!errors.message)} min-h-[160px] resize-none`}
             placeholder={t("steps.messagePlaceholder")}
           />
+          {errors.message && (
+            <p className="mt-1.5 text-xs text-error">{errors.message}</p>
+          )}
         </div>
       ),
     },
@@ -144,11 +219,15 @@ export default function ContactForm() {
             <div className="grid grid-cols-2 gap-3 text-sm">
               <div>
                 <span className="text-muted">{t("name")}:</span>
-                <p className="text-foreground font-medium">{formData.name || "—"}</p>
+                <p className="text-foreground font-medium">
+                  {formData.name || "—"}
+                </p>
               </div>
               <div>
                 <span className="text-muted">{t("email")}:</span>
-                <p className="text-foreground font-medium">{formData.email || "—"}</p>
+                <p className="text-foreground font-medium">
+                  {formData.email || "—"}
+                </p>
               </div>
               <div>
                 <span className="text-muted">{t("project_type")}:</span>
@@ -182,6 +261,28 @@ export default function ContactForm() {
     setSendError(null);
 
     try {
+      const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
+      if (siteKey && typeof window !== "undefined" && window.grecaptcha) {
+        await new Promise<void>((resolve) => window.grecaptcha.ready(resolve));
+        const token = await window.grecaptcha.execute(siteKey, {
+          action: "contact_form",
+        });
+        const verifyRes = await fetch("/api/verify-recaptcha", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ token }),
+        });
+        const { success } = await verifyRes.json();
+        if (!success) {
+          setSendError(
+            locale === "ro"
+              ? "Verificare anti-spam eșuată. Încearcă din nou."
+              : "Anti-spam verification failed. Please try again."
+          );
+          return;
+        }
+      }
+
       const result = await emailjs.send(
         "service_r39wo8l",
         "template_bgdn6lc",
@@ -214,11 +315,23 @@ export default function ContactForm() {
         className="text-center py-16"
       >
         <div className="w-16 h-16 rounded-full bg-success/10 flex items-center justify-center mx-auto mb-6">
-          <svg className="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          <svg
+            className="w-8 h-8 text-success"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M5 13l4 4L19 7"
+            />
           </svg>
         </div>
-        <h3 className="text-2xl font-bold text-foreground mb-2">{t("success")}</h3>
+        <h3 className="text-2xl font-bold text-foreground mb-2">
+          {t("success")}
+        </h3>
         <p className="text-muted">{t("response_time")}</p>
       </motion.div>
     );
@@ -234,6 +347,7 @@ export default function ContactForm() {
       <Stepper
         steps={steps}
         onComplete={handleComplete}
+        onBeforeNext={validateStep}
         nextLabel={t("steps.next")}
         prevLabel={t("steps.back")}
         completeLabel={sending ? t("sending") : t("send")}

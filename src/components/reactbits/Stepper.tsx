@@ -15,6 +15,7 @@ interface StepperProps {
   nextLabel?: string;
   prevLabel?: string;
   completeLabel?: string;
+  onBeforeNext?: (current: number) => boolean;
 }
 
 export default function Stepper({
@@ -24,11 +25,13 @@ export default function Stepper({
   nextLabel = "Next",
   prevLabel = "Back",
   completeLabel = "Submit",
+  onBeforeNext,
 }: StepperProps) {
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState(1);
 
   const next = () => {
+    if (onBeforeNext && !onBeforeNext(current)) return;
     if (current < steps.length - 1) {
       setDirection(1);
       setCurrent((prev) => prev + 1);
