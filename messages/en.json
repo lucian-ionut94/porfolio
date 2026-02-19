@@ -1,0 +1,327 @@
+{
+  "metadata": {
+    "title": "Lucian Ionuț | Full-Stack Web Developer",
+    "description": "Building modern and performant web experiences. From custom WordPress themes to complex React applications."
+  },
+  "nav": {
+    "home": "Home",
+    "portfolio": "Projects",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hey! It's me Lucian,",
+    "heading_1": "Crafting ",
+    "heading_highlight": "modern web experiences",
+    "heading_2": " that perform & inspire.",
+    "description": "I work with clients globally to build pixel-perfect, performant, and accessible digital experiences that drive results and achieve business goals.",
+    "cta": "Know me better",
+    "cta_hover": "About me",
+    "social_linkedin": "LINKEDIN",
+    "social_github": "GITHUB",
+    "social_envato": "ENVATO",
+    "social_email": "EMAIL"
+  },
+  "marquee": {
+    "items": "Graphics,Animations,Community,Development,Mentor,Websites,Designing"
+  },
+  "aboutSection": {
+    "label": "ABOUT ME",
+    "text_before": "I'm Lucian Ionuț, with over 5+ years of experience in ",
+    "text_highlight": "design & development",
+    "text_after": " with strong focus on producing high quality & impactful digital experiences. I have worked with companies and entrepreneurs to help build their top-notch web products."
+  },
+  "portfolio": {
+    "label": "MY WORK",
+    "title": "Selected Projects",
+    "subtitle": "Here's a curated selection showcasing my expertise and the achieved results.",
+    "view_all": "View All Projects",
+    "view_project": "View Project",
+    "view_code": "Source Code",
+    "filter_all": "All",
+    "filter_wordpress": "WordPress",
+    "filter_react": "React",
+    "filter_laravel": "Laravel",
+    "filter_opencart": "OpenCart"
+  },
+  "skills": {
+    "title": "What I Do Best",
+    "subtitle": "Specialized skills and services I bring to every project.",
+    "frontend": "Frontend Development",
+    "frontend_desc": "Modern and responsive interfaces with React, Next.js, TypeScript and Tailwind CSS. Smooth animations and interactive experiences.",
+    "backend": "Backend Development",
+    "backend_desc": "Robust APIs and scalable systems with Laravel, PHP and Node.js. MySQL and PostgreSQL databases.",
+    "wordpress": "WordPress Development",
+    "wordpress_desc": "Custom themes, plugins and full WordPress solutions. Performance optimization and security hardening.",
+    "ecommerce": "E-Commerce Solutions",
+    "ecommerce_desc": "OpenCart, WooCommerce and custom e-commerce platforms. Payment integration and inventory management.",
+    "performance": "Performance Optimization",
+    "performance_desc": "Core Web Vitals optimization, caching strategies, lazy loading and code splitting for blazing-fast sites.",
+    "consulting": "Technical Consulting",
+    "consulting_desc": "Architecture planning, code reviews, technology stack recommendations and development strategy."
+  },
+  "expertise": {
+    "label": "SPECIALITY",
+    "title": "Areas of Expertise",
+    "development": "Development",
+    "development_desc": "Building robust web applications with modern technologies. From responsive frontends to scalable backend systems, I deliver clean, performant code.",
+    "development_skills": "React,Next.js,TypeScript,Node.js,Laravel,PHP",
+    "uiux": "UI/UX Design",
+    "uiux_desc": "Creating intuitive and beautiful user interfaces with a focus on user experience. Translating complex requirements into elegant, accessible designs.",
+    "uiux_skills": "Figma,Adobe XD,Prototyping,Wireframing",
+    "branding": "Branding",
+    "branding_desc": "Developing unique brand identities and visual systems. From WordPress themes to custom CMS solutions that reflect your brand perfectly.",
+    "branding_skills": "WordPress,OpenCart,WooCommerce,SEO"
+  },
+  "techStack": {
+    "label": "TECH STACK",
+    "subtitle": "Technologies and tools I use to bring ideas to life."
+  },
+  "testimonials": {
+    "label": "TESTIMONIALS",
+    "title": "What others say",
+    "subtitle": "I've worked with some amazing people over the years, here is what they have to say about me.",
+    "check_linkedin": "Check it out on LinkedIn"
+  },
+  "articles": {
+    "label": "RECENT ARTICLES",
+    "title": "From the Blog",
+    "subtitle": "Thoughts, tutorials, and insights about web development and design.",
+    "read_more": "Read Article",
+    "view_all": "View All Articles",
+    "min_read": "min read"
+  },
+  "blog": {
+    "label": "BLOG",
+    "title": "Articles & Insights",
+    "subtitle": "Thoughts, tutorials, and insights about web development, design, and the freelance journey.",
+    "all": "All",
+    "empty": "No articles in this category yet.",
+    "min_read": "min read"
+  },
+  "cta": {
+    "badge": "Available for work",
+    "title": "Let's create your next big idea.",
+    "button": "Contact Me"
+  },
+  "aboutPage": {
+    "title": "About Me",
+    "bio": "I'm Lucian Ionuț, a full-stack web developer with over 5 years of experience crafting digital experiences. I specialize in building modern, performant web applications using React, Next.js, Laravel, and WordPress. My passion lies in transforming complex ideas into elegant, user-friendly solutions that drive real business results.",
+    "circular_text": "LETS TALK • LETS TALK • LETS TALK • ",
+    "hero_heading_1": "A ",
+    "hero_highlight": "creative developer",
+    "hero_heading_2": " & digital designer",
+    "hero_description": "I collaborate with brands globally to design impactful, mission-focused websites that drive results and achieve business goals.",
+    "hero_resume": "My Resume",
+    "experience_label_1": "WORK",
+    "experience_label_2": "HISTORY",
+    "experience_title": "Experience",
+    "experience_description": "I have worked with some of the most innovative industry leaders to help build their top-notch products.",
+    "experience_show_more": "Show More",
+    "process_label": "STEPS I FOLLOW",
+    "process_title": "My Design Process",
+    "process_description": "I have worked with some of the most innovative industry leaders to help build their top-notch products.",
+    "process_steps": {
+      "discovery": "Discovery",
+      "discovery_desc": "Every project starts with understanding the client's vision, goals, and target audience. Research is the foundation of great work.",
+      "wireframe": "Wireframe",
+      "wireframe_desc": "After hashing out the details of the website, it's easy to throw the ideas onto pen & paper.",
+      "design": "Design",
+      "design_desc": "The most fun part of all - adding pizzaz to the wireframes and bring it to life.",
+      "development": "Development",
+      "development_desc": "The design may be final but it needs to be functional and practical. Development is key.",
+      "qa": "Quality Assurance",
+      "qa_desc": "Website load times, SEO, file optimization, etc., weigh in to the quality of the site."
+    },
+    "stats": {
+      "years": "Years Experience",
+      "projects": "Projects Delivered",
+      "clients": "Happy Clients"
+    },
+    "bento": {
+      "skills": {
+        "title": "Technical Skills",
+        "description": "WordPress themes from scratch, React & Next.js apps, Laravel CMS platforms, and OpenCart e-commerce stores. From frontend animations to backend APIs — I cover the full stack."
+      },
+      "journey": {
+        "title": "My Journey",
+        "description": "Started building WordPress sites during university, then sold themes on ThemeForest with 2600+ sales. Grew from junior developer to running my own freelance practice, shipping production code for clients worldwide."
+      },
+      "tools": {
+        "title": "Tools & Workflow",
+        "description": "VS Code, Git, Docker, Figma for design handoffs, and CI/CD pipelines for automated deployments. Every project follows a structured workflow from repo setup to production."
+      },
+      "approach": {
+        "title": "My Approach",
+        "description": "Clean code, performance-first, and pixel-perfect execution. I start by understanding the business goals, plan the architecture, then build iteratively with continuous client feedback until launch."
+      },
+      "marketplace": {
+        "title": "Marketplace Experience",
+        "description": "Over 2600 sales on ThemeForest & CodeCanyon with 2 WordPress themes and 6 Laravel CMS products. Built for the international market with a focus on performance, documentation, and user experience."
+      },
+      "collaboration": {
+        "title": "Team & Clients",
+        "description": "Worked closely with designers, project managers, and clients from agencies to startups. I adapt to any workflow — whether it's a solo freelance project or collaborating within a full product team."
+      }
+    }
+  },
+  "contact": {
+    "label": "GET IN TOUCH",
+    "title": "Let's Work Together",
+    "subtitle": "Have a project in mind? I'd love to hear about it. Fill out the form and I'll get back to you as soon as possible.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "project_type": "Project Type",
+    "project_types": {
+      "wordpress": "WordPress Theme / Plugin",
+      "react": "React / Next.js Application",
+      "laravel": "Laravel Application",
+      "ecommerce": "Online Store",
+      "other": "Other"
+    },
+    "budget": "Estimated Budget",
+    "budgets": {
+      "small": "Under €1,000",
+      "medium": "€1,000 - €5,000",
+      "large": "€5,000 - €15,000",
+      "enterprise": "Over €15,000"
+    },
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "An error occurred. Please try again.",
+    "availability": "Available for new projects",
+    "response_time": "I usually respond within 24 hours",
+    "info_email": "hello@lucianionut.com",
+    "info_location": "Romania, EU",
+    "info_location_label": "Location",
+    "info_email_label": "Email",
+    "info_response_label": "Response Time",
+    "info_response_value": "Within 24 hours",
+    "form_title": "Send a Message",
+    "faq_label": "FAQs",
+    "faq_title": "Have Questions?",
+    "faq_subtitle": "Here are some answers to the most common questions I get from clients.",
+    "faq_items": {
+      "q1": "What is your current role?",
+      "a1": "I'm currently working as an independent full-stack web developer and freelancer. I collaborate with clients worldwide on projects ranging from custom WordPress themes to complex React and Laravel applications. I'm open to both freelance projects and full-time opportunities.",
+      "q2": "How much does it cost for a high performing website?",
+      "a2": "Every project is unique, so pricing depends on scope, complexity, and timeline. A simple landing page starts around €1,000, while a full-featured web application can range from €5,000 to €15,000+. I always provide a detailed quote after understanding your requirements.",
+      "q3": "How long will the work take from start to finish?",
+      "a3": "Timelines vary based on the project scope. A typical landing page takes 1–2 weeks, a multi-page website 3–5 weeks, and a complex web application 2–3 months. I'll give you a realistic timeline upfront and keep you updated throughout the process.",
+      "q4": "Are you available to join as full time?",
+      "a4": "Yes, I'm open to full-time remote positions with the right team and project. I'm particularly interested in roles focused on React/Next.js, Laravel, or WordPress development where I can make a meaningful impact. Let's discuss the details!"
+    },
+    "steps": {
+      "info": "Your Information",
+      "project": "Project Details",
+      "message": "Your Message",
+      "confirm": "Review & Submit",
+      "next": "Next",
+      "back": "Back",
+      "messagePlaceholder": "Tell me about your project, goals, and timeline..."
+    }
+  },
+  "chatbot": {
+    "title": "Virtual Assistant",
+    "placeholder": "Type a message...",
+    "greeting": "Hi! I'm Lucian's virtual assistant. How can I help you?",
+    "send": "Send",
+    "thinking": "Thinking...",
+    "online": "Online",
+    "error_message": "Something went wrong. Please try again.",
+    "celebrating": "Happy to help!",
+    "close": "Close"
+  },
+  "footer": {
+    "tagline": "Full-stack web developer crafting modern, performant digital experiences. From custom WordPress themes to complex React applications.",
+    "navigation": "Pages",
+    "nav_home": "Home",
+    "nav_about": "About",
+    "nav_projects": "Projects",
+    "nav_blog": "Blog",
+    "nav_contact": "Contact",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "gdpr": "GDPR",
+    "contact_title": "Get in Touch",
+    "available": "Available for projects",
+    "rights": "All rights reserved.",
+    "made_with": "Designed & built with Next.js, React & TypeScript"
+  },
+  "projectDetail": {
+    "label": "CASE STUDY",
+    "overview": "Overview",
+    "the_results": "Results",
+    "preview": "Design Screens",
+    "live_preview": "Live Preview",
+    "source_code": "Source Code",
+    "prev_project": "Previous",
+    "next_project": "Next",
+    "back_to_all": "All Projects"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "back": "Back",
+    "close": "Close"
+  },
+  "cookie": {
+    "message": "This site uses cookies to improve your experience.",
+    "accept_all": "Accept All",
+    "essential_only": "Essential Only",
+    "privacy_policy": "Privacy Policy"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "back": "Back to Home",
+    "last_updated": "Last updated: February 2026",
+    "contact_note": "For any questions regarding this policy, contact us at",
+    "sections": ["0", "1", "2", "3", "4"],
+    "section_0_title": "Information We Collect",
+    "section_0_text": "We collect information you provide directly, such as your name and email address when using the contact form. We also collect basic analytics data (page views, browser type) through cookies to improve the website experience.",
+    "section_1_title": "How We Use Your Information",
+    "section_1_text": "Your information is used solely to respond to your inquiries, improve our services, and maintain the website. We never sell or share your personal data with third parties for marketing purposes.",
+    "section_2_title": "Cookies",
+    "section_2_text": "This website uses essential cookies for functionality and optional analytics cookies to understand how visitors interact with the site. You can manage your cookie preferences at any time through the cookie banner.",
+    "section_3_title": "Data Retention",
+    "section_3_text": "Contact form submissions are retained only as long as necessary to address your inquiry. Analytics data is anonymized and retained for up to 12 months.",
+    "section_4_title": "Your Rights",
+    "section_4_text": "You have the right to access, correct, or delete your personal data at any time. You can also withdraw consent for non-essential cookies. To exercise these rights, please contact us via email."
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "back": "Back to Home",
+    "last_updated": "Last updated: February 2026",
+    "contact_note": "For any questions regarding these terms, contact us at",
+    "sections": ["0", "1", "2", "3"],
+    "section_0_title": "Use of This Website",
+    "section_0_text": "This website is a personal portfolio showcasing development work and services. All content, including text, code examples, and designs, is provided for informational purposes. You may browse freely, but reproducing or distributing content without permission is not allowed.",
+    "section_1_title": "Intellectual Property",
+    "section_1_text": "All original content on this website, including designs, code, and written material, is the intellectual property of Lucian Ionuț unless otherwise stated. Third-party logos, trademarks, and technologies mentioned belong to their respective owners.",
+    "section_2_title": "Freelance Services",
+    "section_2_text": "Any freelance work or development services discussed through this website are subject to separate agreements. Project scope, timelines, and pricing are determined on a per-project basis through direct communication.",
+    "section_3_title": "Limitation of Liability",
+    "section_3_text": "This website is provided as-is. While we strive for accuracy, we make no warranties about the completeness or reliability of the content. We are not liable for any damages arising from the use of this website."
+  },
+  "gdpr": {
+    "title": "GDPR Compliance",
+    "back": "Back to Home",
+    "last_updated": "Last updated: February 2026",
+    "contact_note": "For GDPR-related requests, contact our data controller at",
+    "sections": ["0", "1", "2", "3", "4"],
+    "section_0_title": "Data Controller",
+    "section_0_text": "Lucian Ionuț acts as the data controller for personal data collected through this website. We process data in accordance with the General Data Protection Regulation (EU) 2016/679.",
+    "section_1_title": "Legal Basis for Processing",
+    "section_1_text": "We process personal data based on: (a) your consent when submitting the contact form or accepting cookies, and (b) legitimate interest for essential website functionality and security.",
+    "section_2_title": "Data Subject Rights",
+    "section_2_text": "Under GDPR, you have the right to: access your personal data, rectify inaccurate data, request erasure ('right to be forgotten'), restrict processing, data portability, and object to processing. We respond to all valid requests within 30 days.",
+    "section_3_title": "Data Transfers",
+    "section_3_text": "Your data is primarily processed within the EU/EEA. If any data is transferred outside the EEA (e.g., through analytics services), appropriate safeguards are in place, including Standard Contractual Clauses.",
+    "section_4_title": "Data Protection",
+    "section_4_text": "We implement appropriate technical and organizational measures to protect your data, including encrypted connections (HTTPS), secure hosting, and limited data access. In the unlikely event of a data breach, affected individuals and the relevant supervisory authority will be notified within 72 hours."
+  }
+}

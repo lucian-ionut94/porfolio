@@ -1,0 +1,327 @@
+{
+  "metadata": {
+    "title": "Lucian Ionuț | Full-Stack Web Developer",
+    "description": "Construiesc experiențe web moderne și performante. De la teme WordPress custom la aplicații React complexe."
+  },
+  "nav": {
+    "home": "Acasă",
+    "portfolio": "Proiecte",
+    "about": "Despre",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Salut! Sunt Lucian,",
+    "heading_1": "Construiesc ",
+    "heading_highlight": "experiențe web moderne",
+    "heading_2": " care performează și inspiră.",
+    "description": "Colaborez cu clienți din toată lumea pentru a crea soluții digitale pixel-perfect, performante și accesibile, care aduc rezultate reale.",
+    "cta": "Află mai multe",
+    "cta_hover": "Despre mine",
+    "social_linkedin": "LINKEDIN",
+    "social_github": "GITHUB",
+    "social_envato": "ENVATO",
+    "social_email": "EMAIL"
+  },
+  "marquee": {
+    "items": "Grafică,Animații,Comunitate,Development,Mentor,Website-uri,Design"
+  },
+  "aboutSection": {
+    "label": "DESPRE MINE",
+    "text_before": "Sunt Lucian Ionuț, cu peste 5 ani de experiență în ",
+    "text_highlight": "design & development",
+    "text_after": " cu un focus puternic pe crearea de experiențe digitale de înaltă calitate și impact. Am colaborat cu companii și antreprenori pentru a construi produse web performante și moderne."
+  },
+  "portfolio": {
+    "label": "PROIECTELE MELE",
+    "title": "Proiecte Selectate",
+    "subtitle": "O selecție de proiecte care demonstrează expertiza și rezultatele obținute.",
+    "view_all": "Vezi Toate Proiectele",
+    "view_project": "Vezi Proiect",
+    "view_code": "Cod Sursă",
+    "filter_all": "Toate",
+    "filter_wordpress": "WordPress",
+    "filter_react": "React",
+    "filter_laravel": "Laravel",
+    "filter_opencart": "OpenCart"
+  },
+  "skills": {
+    "title": "Ce Fac Cel Mai Bine",
+    "subtitle": "Abilități și servicii specializate pe care le aduc fiecărui proiect.",
+    "frontend": "Frontend Development",
+    "frontend_desc": "Interfețe moderne și responsive cu React, Next.js, TypeScript și Tailwind CSS. Animații fluide și experiențe interactive.",
+    "backend": "Backend Development",
+    "backend_desc": "API-uri robuste și sisteme scalabile cu Laravel, PHP și Node.js. Baze de date MySQL și PostgreSQL.",
+    "wordpress": "WordPress Development",
+    "wordpress_desc": "Teme custom, plugin-uri și soluții WordPress complete. Optimizare performanță și securitate.",
+    "ecommerce": "Soluții E-Commerce",
+    "ecommerce_desc": "OpenCart, WooCommerce și platforme e-commerce personalizate. Integrare plăți și management inventar.",
+    "performance": "Optimizare Performanță",
+    "performance_desc": "Optimizare Core Web Vitals, strategii de caching, lazy loading și code splitting pentru site-uri ultra-rapide.",
+    "consulting": "Consultanță Tehnică",
+    "consulting_desc": "Planificare arhitectură, code reviews, recomandări tech stack și strategie de dezvoltare."
+  },
+  "expertise": {
+    "label": "SPECIALIZARE",
+    "title": "Arii de Expertiză",
+    "development": "Development",
+    "development_desc": "Construiesc aplicații web robuste cu tehnologii moderne. De la frontend-uri responsive la sisteme backend scalabile, livrez cod curat și performant.",
+    "development_skills": "React,Next.js,TypeScript,Node.js,Laravel,PHP",
+    "uiux": "UI/UX Design",
+    "uiux_desc": "Creez interfețe intuitive și frumoase cu focus pe experiența utilizatorului. Transform cerințe complexe în design-uri elegante și accesibile.",
+    "uiux_skills": "Figma,Adobe XD,Prototipare,Wireframing",
+    "branding": "Branding",
+    "branding_desc": "Dezvolt identități de brand unice și sisteme vizuale. De la teme WordPress la soluții CMS personalizate care reflectă brandul tău perfect.",
+    "branding_skills": "WordPress,OpenCart,WooCommerce,SEO"
+  },
+  "techStack": {
+    "label": "TEHNOLOGII",
+    "subtitle": "Tehnologiile și instrumentele pe care le folosesc pentru a da viață ideilor."
+  },
+  "testimonials": {
+    "label": "TESTIMONIALE",
+    "title": "Ce spun alții",
+    "subtitle": "Am colaborat cu oameni extraordinari de-a lungul anilor, iată ce au de spus.",
+    "check_linkedin": "Verifică pe LinkedIn"
+  },
+  "articles": {
+    "label": "ARTICOLE RECENTE",
+    "title": "De pe Blog",
+    "subtitle": "Gânduri, tutoriale și perspective despre dezvoltare web și design.",
+    "read_more": "Citește Articolul",
+    "view_all": "Vezi Toate Articolele",
+    "min_read": "min citire"
+  },
+  "blog": {
+    "label": "BLOG",
+    "title": "Articole & Perspective",
+    "subtitle": "Gânduri, tutoriale și perspective despre dezvoltare web, design și viața de freelancer.",
+    "all": "Toate",
+    "empty": "Niciun articol în această categorie.",
+    "min_read": "min citire"
+  },
+  "cta": {
+    "badge": "Disponibil pentru proiecte",
+    "title": "Hai să creăm următorul tău proiect.",
+    "button": "Contactează-mă"
+  },
+  "aboutPage": {
+    "title": "Despre Mine",
+    "bio": "Sunt Lucian Ionuț, un dezvoltator web full-stack cu peste 5 ani de experiență în crearea de experiențe digitale. Mă specializez în construirea de aplicații web moderne și performante folosind React, Next.js, Laravel și WordPress. Pasiunea mea este transformarea ideilor complexe în soluții elegante și prietenoase cu utilizatorul, care aduc rezultate reale de business.",
+    "circular_text": "HAI SA VORBIM • HAI SA VORBIM • ",
+    "hero_heading_1": "Un ",
+    "hero_highlight": "developer creativ",
+    "hero_heading_2": " & designer digital",
+    "hero_description": "Colaborez cu branduri din toata lumea pentru a crea website-uri impactante, orientate spre rezultate si obiective de business.",
+    "hero_resume": "CV-ul Meu",
+    "experience_label_1": "ISTORIC",
+    "experience_label_2": "PROFESIONAL",
+    "experience_title": "Experienta",
+    "experience_description": "Am colaborat cu unii dintre cei mai inovatori lideri din industrie pentru a construi produse de top.",
+    "experience_show_more": "Vezi Mai Mult",
+    "process_label": "PAȘII MEI",
+    "process_title": "Procesul Meu de Design",
+    "process_description": "Am colaborat cu unii dintre cei mai inovatori lideri din industrie pentru a construi produse de top.",
+    "process_steps": {
+      "discovery": "Descoperire",
+      "discovery_desc": "Fiecare proiect începe cu înțelegerea viziunii clientului, obiectivelor și publicului țintă. Cercetarea este fundația unei lucrări excelente.",
+      "wireframe": "Wireframe",
+      "wireframe_desc": "După ce stabilim detaliile website-ului, e simplu să transpunem ideile pe hârtie.",
+      "design": "Design",
+      "design_desc": "Partea cea mai distractivă — adăugăm personalitate wireframe-urilor și le dăm viață.",
+      "development": "Development",
+      "development_desc": "Design-ul poate fi final, dar trebuie să fie funcțional și practic. Development-ul este cheia.",
+      "qa": "Quality Assurance",
+      "qa_desc": "Timpii de încărcare, SEO, optimizarea fișierelor etc. contribuie la calitatea site-ului."
+    },
+    "stats": {
+      "years": "Ani Experiență",
+      "projects": "Proiecte Livrate",
+      "clients": "Clienți Mulțumiți"
+    },
+    "bento": {
+      "skills": {
+        "title": "Abilități Tehnice",
+        "description": "Teme WordPress de la zero, aplicații React & Next.js, platforme CMS în Laravel și magazine OpenCart. De la animații frontend la API-uri backend — acopăr întregul stack."
+      },
+      "journey": {
+        "title": "Parcursul Meu",
+        "description": "Am început să construiesc site-uri WordPress în facultate, apoi am vândut teme pe ThemeForest cu peste 2600 de vânzări. Am crescut de la junior la propriul business de freelancing, livrând cod de producție pentru clienți din toată lumea."
+      },
+      "tools": {
+        "title": "Instrumente & Workflow",
+        "description": "VS Code, Git, Docker, Figma pentru design handoffs și pipeline-uri CI/CD pentru deploy-uri automatizate. Fiecare proiect urmează un workflow structurat de la setup la producție."
+      },
+      "approach": {
+        "title": "Abordarea Mea",
+        "description": "Cod curat, performanță-first și execuție pixel-perfect. Încep prin înțelegerea obiectivelor de business, planific arhitectura, apoi construiesc iterativ cu feedback continuu până la lansare."
+      },
+      "marketplace": {
+        "title": "Experiență Marketplace",
+        "description": "Peste 2600 de vânzări pe ThemeForest & CodeCanyon cu 2 teme WordPress și 6 produse CMS în Laravel. Construite pentru piața internațională cu focus pe performanță, documentație și experiența utilizatorului."
+      },
+      "collaboration": {
+        "title": "Echipă & Clienți",
+        "description": "Am lucrat îndeaproape cu designeri, project manageri și clienți — de la agenții la startup-uri. Mă adaptez la orice workflow, fie că e un proiect solo sau colaborare într-o echipă completă."
+      }
+    }
+  },
+  "contact": {
+    "label": "CONTACTEAZĂ-MĂ",
+    "title": "Hai Să Lucrăm Împreună",
+    "subtitle": "Ai un proiect în minte? Mi-ar plăcea să aud despre el. Completează formularul și revin cu un răspuns cât mai curând.",
+    "name": "Nume",
+    "email": "Email",
+    "message": "Mesaj",
+    "project_type": "Tip Proiect",
+    "project_types": {
+      "wordpress": "Temă / Plugin WordPress",
+      "react": "Aplicație React / Next.js",
+      "laravel": "Aplicație Laravel",
+      "ecommerce": "Magazin Online",
+      "other": "Altele"
+    },
+    "budget": "Buget Estimat",
+    "budgets": {
+      "small": "Sub 1.000€",
+      "medium": "1.000€ - 5.000€",
+      "large": "5.000€ - 15.000€",
+      "enterprise": "Peste 15.000€"
+    },
+    "send": "Trimite Mesaj",
+    "sending": "Se trimite...",
+    "success": "Mesajul a fost trimis cu succes!",
+    "error": "A apărut o eroare. Încearcă din nou.",
+    "availability": "Disponibil pentru proiecte noi",
+    "response_time": "Răspund în 24 de ore",
+    "info_email": "hello@lucianionut.com",
+    "info_location": "România, UE",
+    "info_location_label": "Locație",
+    "info_email_label": "Email",
+    "info_response_label": "Timp de Răspuns",
+    "info_response_value": "În 24 de ore",
+    "form_title": "Trimite un Mesaj",
+    "faq_label": "ÎNTREBĂRI",
+    "faq_title": "Ai Întrebări?",
+    "faq_subtitle": "Iată câteva răspunsuri la cele mai frecvente întrebări pe care le primesc de la clienți.",
+    "faq_items": {
+      "q1": "Care este rolul tău actual?",
+      "a1": "Lucrez în prezent ca dezvoltator web full-stack independent și freelancer. Colaborez cu clienți din toată lumea pe proiecte de la teme WordPress personalizate la aplicații complexe React și Laravel. Sunt deschis atât pentru proiecte freelance, cât și pentru oportunități full-time.",
+      "q2": "Cât costă un website performant?",
+      "a2": "Fiecare proiect este unic, așa că prețul depinde de complexitate, funcționalități și termen. O pagină simplă de prezentare pornește de la €1.000, în timp ce o aplicație web completă poate varia între €5.000 și €15.000+. Ofer întotdeauna o estimare detaliată după ce înțeleg cerințele tale.",
+      "q3": "Cât durează proiectul de la început până la final?",
+      "a3": "Termenele variază în funcție de complexitatea proiectului. O pagină de prezentare durează 1–2 săptămâni, un website multi-pagină 3–5 săptămâni, iar o aplicație web complexă 2–3 luni. Îți ofer un termen realist de la început și te țin la curent pe tot parcursul procesului.",
+      "q4": "Ești disponibil pentru un job full-time?",
+      "a4": "Da, sunt deschis pentru poziții full-time remote cu echipa și proiectul potrivit. Sunt interesat în special de roluri focusate pe React/Next.js, Laravel sau dezvoltare WordPress unde pot aduce un impact semnificativ. Hai să discutăm detaliile!"
+    },
+    "steps": {
+      "info": "Informațiile Tale",
+      "project": "Detalii Proiect",
+      "message": "Mesajul Tău",
+      "confirm": "Revizuire & Trimitere",
+      "next": "Următorul",
+      "back": "Înapoi",
+      "messagePlaceholder": "Spune-mi despre proiectul tău, obiective și timeline..."
+    }
+  },
+  "chatbot": {
+    "title": "Asistent Virtual",
+    "placeholder": "Scrie un mesaj...",
+    "greeting": "Salut! Sunt asistentul virtual al lui Lucian. Cu ce te pot ajuta?",
+    "send": "Trimite",
+    "thinking": "Se gandeste...",
+    "online": "Online",
+    "error_message": "A aparut o eroare. Te rog incearca din nou.",
+    "celebrating": "Ma bucur ca am ajutat!",
+    "close": "Inchide"
+  },
+  "footer": {
+    "tagline": "Dezvoltator web full-stack care creează experiențe digitale moderne și performante. De la teme WordPress custom la aplicații React complexe.",
+    "navigation": "Pagini",
+    "nav_home": "Acasă",
+    "nav_about": "Despre",
+    "nav_projects": "Proiecte",
+    "nav_blog": "Blog",
+    "nav_contact": "Contact",
+    "legal": "Legal",
+    "privacy": "Politica de Confidențialitate",
+    "terms": "Termeni și Condiții",
+    "gdpr": "GDPR",
+    "contact_title": "Contact",
+    "available": "Disponibil pentru proiecte",
+    "rights": "Toate drepturile rezervate.",
+    "made_with": "Proiectat & construit cu Next.js, React & TypeScript"
+  },
+  "projectDetail": {
+    "label": "STUDIU DE CAZ",
+    "overview": "Prezentare Generală",
+    "the_results": "Rezultate",
+    "preview": "Design Screens",
+    "live_preview": "Previzualizare Live",
+    "source_code": "Cod Sursă",
+    "prev_project": "Anterior",
+    "next_project": "Următorul",
+    "back_to_all": "Toate Proiectele"
+  },
+  "common": {
+    "loading": "Se încarcă...",
+    "error": "Eroare",
+    "back": "Înapoi",
+    "close": "Închide"
+  },
+  "cookie": {
+    "message": "Acest site folosește cookie-uri pentru a îmbunătăți experiența ta.",
+    "accept_all": "Acceptă Toate",
+    "essential_only": "Doar Esențiale",
+    "privacy_policy": "Politica de Confidențialitate"
+  },
+  "privacy": {
+    "title": "Politica de Confidențialitate",
+    "back": "Înapoi la pagina principală",
+    "last_updated": "Ultima actualizare: Februarie 2026",
+    "contact_note": "Pentru orice întrebări legate de această politică, contactează-ne la",
+    "sections": ["0", "1", "2", "3", "4"],
+    "section_0_title": "Informațiile pe care le colectăm",
+    "section_0_text": "Colectăm informațiile pe care le furnizezi direct, cum ar fi numele și adresa de email prin formularul de contact. De asemenea, colectăm date analitice de bază (vizualizări pagini, tip browser) prin cookie-uri pentru a îmbunătăți experiența pe site.",
+    "section_1_title": "Cum folosim informațiile tale",
+    "section_1_text": "Informațiile tale sunt folosite exclusiv pentru a răspunde solicitărilor tale, a îmbunătăți serviciile noastre și a menține website-ul. Nu vindem și nu partajăm niciodată datele tale personale cu terți în scopuri de marketing.",
+    "section_2_title": "Cookie-uri",
+    "section_2_text": "Acest website folosește cookie-uri esențiale pentru funcționalitate și cookie-uri analitice opționale pentru a înțelege cum interacționează vizitatorii cu site-ul. Poți gestiona preferințele de cookie-uri oricând prin banner-ul de cookie-uri.",
+    "section_3_title": "Păstrarea datelor",
+    "section_3_text": "Trimiterile din formularul de contact sunt păstrate doar cât este necesar pentru a răspunde solicitării tale. Datele analitice sunt anonimizate și păstrate pentru maximum 12 luni.",
+    "section_4_title": "Drepturile tale",
+    "section_4_text": "Ai dreptul de a accesa, corecta sau șterge datele tale personale în orice moment. Poți retrage și consimțământul pentru cookie-urile neesențiale. Pentru a exercita aceste drepturi, te rugăm să ne contactezi prin email."
+  },
+  "terms": {
+    "title": "Termeni și Condiții",
+    "back": "Înapoi la pagina principală",
+    "last_updated": "Ultima actualizare: Februarie 2026",
+    "contact_note": "Pentru orice întrebări legate de acești termeni, contactează-ne la",
+    "sections": ["0", "1", "2", "3"],
+    "section_0_title": "Utilizarea acestui website",
+    "section_0_text": "Acest website este un portofoliu personal care prezintă lucrări și servicii de dezvoltare. Tot conținutul, inclusiv textele, exemplele de cod și design-urile, este furnizat în scop informativ. Poți naviga liber, dar reproducerea sau distribuirea conținutului fără permisiune nu este permisă.",
+    "section_1_title": "Proprietate intelectuală",
+    "section_1_text": "Tot conținutul original de pe acest website, inclusiv design-urile, codul și materialele scrise, este proprietatea intelectuală a lui Lucian Ionuț, dacă nu se specifică altfel. Logo-urile, mărcile comerciale și tehnologiile terțe menționate aparțin proprietarilor respectivi.",
+    "section_2_title": "Servicii freelance",
+    "section_2_text": "Orice lucrări freelance sau servicii de dezvoltare discutate prin intermediul acestui website sunt supuse unor acorduri separate. Scopul proiectului, termenele și prețurile sunt stabilite per proiect prin comunicare directă.",
+    "section_3_title": "Limitarea răspunderii",
+    "section_3_text": "Acest website este furnizat ca atare. Deși ne străduim pentru acuratețe, nu oferim garanții privind completitudinea sau fiabilitatea conținutului. Nu suntem răspunzători pentru daune rezultate din utilizarea acestui website."
+  },
+  "gdpr": {
+    "title": "Conformitate GDPR",
+    "back": "Înapoi la pagina principală",
+    "last_updated": "Ultima actualizare: Februarie 2026",
+    "contact_note": "Pentru solicitări legate de GDPR, contactează operatorul de date la",
+    "sections": ["0", "1", "2", "3", "4"],
+    "section_0_title": "Operatorul de date",
+    "section_0_text": "Lucian Ionuț acționează ca operator de date pentru datele personale colectate prin acest website. Procesăm datele în conformitate cu Regulamentul General privind Protecția Datelor (UE) 2016/679.",
+    "section_1_title": "Baza legală pentru procesare",
+    "section_1_text": "Procesăm datele personale pe baza: (a) consimțământului tău la trimiterea formularului de contact sau acceptarea cookie-urilor, și (b) interesului legitim pentru funcționalitatea esențială a website-ului și securitate.",
+    "section_2_title": "Drepturile persoanelor vizate",
+    "section_2_text": "Conform GDPR, ai dreptul de a: accesa datele tale personale, rectifica datele inexacte, solicita ștergerea ('dreptul de a fi uitat'), restricționa procesarea, portabilitatea datelor și de a te opune procesării. Răspundem tuturor solicitărilor valide în termen de 30 de zile.",
+    "section_3_title": "Transferuri de date",
+    "section_3_text": "Datele tale sunt procesate în principal în UE/SEE. Dacă vreun transfer de date are loc în afara SEE (de ex. prin servicii de analiză), sunt implementate măsuri de protecție adecvate, inclusiv Clauze Contractuale Standard.",
+    "section_4_title": "Protecția datelor",
+    "section_4_text": "Implementăm măsuri tehnice și organizatorice adecvate pentru protecția datelor tale, inclusiv conexiuni criptate (HTTPS), găzduire securizată și acces limitat la date. În cazul puțin probabil al unei breșe de date, persoanele afectate și autoritatea de supraveghere relevantă vor fi notificate în termen de 72 de ore."
+  }
+}

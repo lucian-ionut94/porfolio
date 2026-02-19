@@ -1,0 +1,415 @@
+/* ========================= */
+/* CUTE ASTRONAUT ROBOT      */
+/* ========================= */
+
+.robot-container {
+  width: 120px;
+  height: 130px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Wrapper for floating body parts together */
+.robot-figure {
+  position: absolute;
+  inset: 0;
+  transform-origin: center 60%;
+}
+
+/* ---- HEAD / HELMET ---- */
+.robot-head {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 76px;
+  height: 70px;
+  background: linear-gradient(145deg, #f0f0f0 0%, #d4d4d8 100%);
+  border-radius: 50% 50% 46% 46%;
+  z-index: 3;
+  box-shadow:
+    inset -3px -3px 8px rgba(0, 0, 0, 0.08),
+    inset 2px 2px 6px rgba(255, 255, 255, 0.9),
+    0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Helmet shine */
+.robot-head::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 12px;
+  width: 18px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  transform: rotate(-20deg);
+}
+
+/* ---- VISOR ---- */
+.robot-visor {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 56px;
+  height: 38px;
+  background: linear-gradient(170deg, #1e293b 0%, #0f172a 100%);
+  border-radius: 50% 50% 44% 44%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding-top: 4px;
+  box-shadow:
+    inset 0 2px 8px rgba(0, 0, 0, 0.4),
+    0 0 0 2px rgba(163, 230, 53, 0.08);
+  overflow: hidden;
+}
+
+/* Visor glass reflection */
+.robot-visor::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 8px;
+  width: 10px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  transform: rotate(15deg);
+}
+
+/* ---- EYES ---- */
+.robot-eye {
+  width: 12px;
+  height: 12px;
+  background: #a3e635;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  box-shadow:
+    0 0 8px rgba(163, 230, 53, 0.9),
+    0 0 16px rgba(163, 230, 53, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Happy curved eye overlay — makes them look like smiling ^_^ */
+.robot-eye::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 7px;
+  background: #0f172a;
+  border-radius: 0 0 50% 50%;
+}
+
+/* ---- EARS ---- */
+.robot-ear {
+  position: absolute;
+  top: 26px;
+  width: 10px;
+  height: 18px;
+  background: linear-gradient(180deg, #a3e635 0%, #84cc16 100%);
+  border-radius: 4px;
+  z-index: 2;
+  box-shadow: 0 0 6px rgba(163, 230, 53, 0.3);
+}
+
+.robot-ear-left {
+  left: -4px;
+  border-radius: 6px 2px 2px 6px;
+}
+
+.robot-ear-right {
+  right: -4px;
+  border-radius: 2px 6px 6px 2px;
+}
+
+/* ---- BODY ---- */
+.robot-body {
+  position: absolute;
+  top: 62px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 52px;
+  height: 44px;
+  background: linear-gradient(170deg, #f0f0f0 0%, #d4d4d8 100%);
+  border-radius: 26% 26% 50% 50%;
+  z-index: 2;
+  box-shadow:
+    inset -2px -2px 6px rgba(0, 0, 0, 0.06),
+    inset 1px 1px 4px rgba(255, 255, 255, 0.8),
+    0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* ---- CHEST PANEL ---- */
+.robot-chest {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 22px;
+  background: linear-gradient(170deg, #a3e635 0%, #65a30d 100%);
+  border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+  box-shadow:
+    0 0 10px rgba(163, 230, 53, 0.4),
+    inset 0 1px 3px rgba(255, 255, 255, 0.3);
+}
+
+/* Chest shine */
+.robot-chest::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 6px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+
+/* ---- ARMS ---- */
+.robot-arm {
+  position: absolute;
+  top: 66px;
+  width: 38px;
+  height: 18px;
+  background: linear-gradient(180deg, #e8e8e8 0%, #d4d4d8 100%);
+  z-index: 1;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transform-origin: 80% 50%;
+}
+
+.robot-arm-left {
+  left: 2px;
+  border-radius: 20px 8px 14px 20px;
+  transform-origin: right center;
+}
+
+.robot-arm-right {
+  right: 2px;
+  border-radius: 8px 20px 20px 14px;
+  transform-origin: left center;
+}
+
+/* ---- SHADOW ---- */
+.robot-shadow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 54px;
+  height: 10px;
+  background: radial-gradient(ellipse, rgba(0, 0, 0, 0.18) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+/* ---- Disable float/bounce in compact spaces (header) ---- */
+.robot-no-float .robot-figure {
+  animation: none !important;
+}
+
+.robot-no-float .robot-shadow {
+  animation: none !important;
+}
+
+/* ============================= */
+/* ANIMATION STATES              */
+/* ============================= */
+
+/* ---- IDLE: gentle floating ---- */
+.robot-idle .robot-figure {
+  animation: robot-float 3s ease-in-out infinite;
+}
+
+.robot-idle .robot-shadow {
+  animation: robot-shadow-pulse 3s ease-in-out infinite;
+}
+
+.robot-idle .robot-chest {
+  animation: robot-chest-glow 3s ease-in-out infinite;
+}
+
+@keyframes robot-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes robot-shadow-pulse {
+  0%, 100% { transform: translateX(-50%) scale(1); opacity: 1; }
+  50% { transform: translateX(-50%) scale(0.75); opacity: 0.5; }
+}
+
+@keyframes robot-chest-glow {
+  0%, 100% { box-shadow: 0 0 10px rgba(163, 230, 53, 0.4), inset 0 1px 3px rgba(255, 255, 255, 0.3); }
+  50% { box-shadow: 0 0 18px rgba(163, 230, 53, 0.6), 0 0 30px rgba(163, 230, 53, 0.2), inset 0 1px 3px rgba(255, 255, 255, 0.3); }
+}
+
+/* ---- THINKING: tilt head + blink eyes ---- */
+.robot-thinking .robot-figure {
+  animation: robot-think-bob 2s ease-in-out infinite;
+}
+
+.robot-thinking .robot-head {
+  animation: robot-think-tilt 2s ease-in-out infinite;
+}
+
+.robot-thinking .robot-eye {
+  animation: robot-blink 1.4s ease-in-out infinite;
+}
+
+.robot-thinking .robot-shadow {
+  animation: robot-shadow-pulse 2s ease-in-out infinite;
+}
+
+.robot-thinking .robot-chest {
+  animation: robot-chest-fast 0.8s ease-in-out infinite;
+}
+
+@keyframes robot-think-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+@keyframes robot-think-tilt {
+  0%, 100% { transform: translateX(-50%) rotate(0deg); }
+  30% { transform: translateX(-50%) rotate(6deg); }
+  70% { transform: translateX(-50%) rotate(-4deg); }
+}
+
+@keyframes robot-blink {
+  0%, 42%, 58%, 100% { transform: scaleY(1); opacity: 1; }
+  50% { transform: scaleY(0.1); opacity: 0.6; }
+}
+
+@keyframes robot-chest-fast {
+  0%, 100% { box-shadow: 0 0 10px rgba(163, 230, 53, 0.4), inset 0 1px 3px rgba(255, 255, 255, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(163, 230, 53, 0.8), 0 0 36px rgba(163, 230, 53, 0.3), inset 0 1px 3px rgba(255, 255, 255, 0.3); }
+}
+
+/* ---- TALKING: intense eye glow + visor pulse ---- */
+.robot-talking .robot-figure {
+  animation: robot-float 3s ease-in-out infinite;
+}
+
+.robot-talking .robot-eye {
+  animation: robot-talk-glow 0.8s ease-in-out infinite;
+}
+
+.robot-talking .robot-visor {
+  animation: robot-visor-pulse 0.8s ease-in-out infinite;
+}
+
+.robot-talking .robot-shadow {
+  animation: robot-shadow-pulse 3s ease-in-out infinite;
+}
+
+.robot-talking .robot-chest {
+  animation: robot-chest-glow 1.5s ease-in-out infinite;
+}
+
+@keyframes robot-talk-glow {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(163, 230, 53, 0.9), 0 0 16px rgba(163, 230, 53, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 14px rgba(163, 230, 53, 1), 0 0 28px rgba(163, 230, 53, 0.6), 0 0 40px rgba(163, 230, 53, 0.2);
+  }
+}
+
+@keyframes robot-visor-pulse {
+  0%, 100% {
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.4), 0 0 0 2px rgba(163, 230, 53, 0.08);
+  }
+  50% {
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.4), 0 0 0 2px rgba(163, 230, 53, 0.2), 0 0 12px rgba(163, 230, 53, 0.15);
+  }
+}
+
+/* ---- WAVING: right arm waves ---- */
+.robot-waving .robot-figure {
+  animation: robot-float 3s ease-in-out infinite;
+}
+
+.robot-waving .robot-arm-right {
+  animation: robot-wave 0.5s ease-in-out 5;
+}
+
+.robot-waving .robot-shadow {
+  animation: robot-shadow-pulse 3s ease-in-out infinite;
+}
+
+.robot-waving .robot-eye {
+  box-shadow:
+    0 0 10px rgba(163, 230, 53, 1),
+    0 0 22px rgba(163, 230, 53, 0.5);
+}
+
+.robot-waving .robot-chest {
+  animation: robot-chest-glow 2s ease-in-out infinite;
+}
+
+@keyframes robot-wave {
+  0%, 100% { transform: rotate(0deg); }
+  20% { transform: rotate(-30deg) translateY(-4px); }
+  50% { transform: rotate(-15deg) translateY(-2px); }
+  80% { transform: rotate(-30deg) translateY(-4px); }
+}
+
+/* ---- CELEBRATING: both arms up, happy bounce, intense glow ---- */
+.robot-celebrating .robot-figure {
+  animation: robot-celebrate-bounce 0.6s ease-in-out infinite;
+}
+
+.robot-celebrating .robot-arm-left {
+  animation: robot-celebrate-arm-left 0.6s ease-in-out infinite;
+}
+
+.robot-celebrating .robot-arm-right {
+  animation: robot-celebrate-arm-right 0.6s ease-in-out infinite;
+}
+
+.robot-celebrating .robot-eye {
+  animation: robot-celebrate-eyes 0.6s ease-in-out infinite;
+}
+
+.robot-celebrating .robot-shadow {
+  animation: robot-shadow-pulse 0.6s ease-in-out infinite;
+}
+
+.robot-celebrating .robot-chest {
+  animation: robot-celebrate-chest 0.6s ease-in-out infinite;
+}
+
+.robot-celebrating .robot-visor {
+  animation: robot-visor-pulse 0.6s ease-in-out infinite;
+}
+
+@keyframes robot-celebrate-bounce {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-10px) scale(1.04); }
+}
+
+@keyframes robot-celebrate-arm-left {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(30deg) translateY(-6px); }
+}
+
+@keyframes robot-celebrate-arm-right {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-30deg) translateY(-6px); }
+}
+
+@keyframes robot-celebrate-eyes {
+  0%, 100% { transform: scaleY(1); box-shadow: 0 0 10px rgba(163, 230, 53, 1), 0 0 22px rgba(163, 230, 53, 0.6); }
+  50% { transform: scaleY(0.6); box-shadow: 0 0 16px rgba(163, 230, 53, 1), 0 0 32px rgba(163, 230, 53, 0.8); }
+}
+
+@keyframes robot-celebrate-chest {
+  0%, 100% { box-shadow: 0 0 14px rgba(163, 230, 53, 0.7), 0 0 28px rgba(163, 230, 53, 0.3), inset 0 1px 3px rgba(255, 255, 255, 0.3); }
+  50% { box-shadow: 0 0 24px rgba(163, 230, 53, 1), 0 0 44px rgba(163, 230, 53, 0.5), 0 0 60px rgba(163, 230, 53, 0.2), inset 0 1px 3px rgba(255, 255, 255, 0.3); }
+}
