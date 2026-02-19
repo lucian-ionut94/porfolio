@@ -31,7 +31,7 @@ export default function AboutPreview() {
         <ScrollReveal
           text={fullText}
           tag="h2"
-          className="font-sans text-[32px] leading-[44px] font-medium"
+          className="font-sans text-[18px] leading-[30px] md:text-[32px] md:leading-[44px] font-medium"
           activeColor="#ffffff"
           inactiveColor="#3a3a4a"
         />
