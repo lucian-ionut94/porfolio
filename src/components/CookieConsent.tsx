@@ -7,24 +7,32 @@ import { Link } from "@/i18n/navigation";
 
 const GA_ID = "G-QY89V1JETV";
 
+declare global {
+  interface Window {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    dataLayer: any[];
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    gtag: (...args: any[]) => void;
+  }
+}
+
 function loadGA() {
   if (typeof window === "undefined") return;
   if (document.getElementById("ga-script")) return;
 
-  const s1 = document.createElement("script");
-  s1.id = "ga-script";
-  s1.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
-  s1.async = true;
-  document.head.appendChild(s1);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () {
+    // eslint-disable-next-line prefer-rest-params
+    window.dataLayer.push(arguments);
+  };
+  window.gtag("js", new Date());
+  window.gtag("config", GA_ID);
 
-  const s2 = document.createElement("script");
-  s2.innerHTML = `
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '${GA_ID}');
-  `;
-  document.head.appendChild(s2);
+  const script = document.createElement("script");
+  script.id = "ga-script";
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+  script.async = true;
+  document.head.appendChild(script);
 }
 
 export default function CookieConsent() {
