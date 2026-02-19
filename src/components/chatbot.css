@@ -336,7 +336,7 @@
 }
 
 .robot-waving .robot-arm-right {
-  animation: robot-wave 0.5s ease-in-out 5;
+  animation: robot-wave-loop 3s ease-in-out infinite;
 }
 
 .robot-waving .robot-shadow {
@@ -358,6 +358,16 @@
   20% { transform: rotate(-30deg) translateY(-4px); }
   50% { transform: rotate(-15deg) translateY(-2px); }
   80% { transform: rotate(-30deg) translateY(-4px); }
+}
+
+/* Continuous wave loop: waves twice then pauses */
+@keyframes robot-wave-loop {
+  0%  { transform: rotate(0deg); }
+  8%  { transform: rotate(-32deg) translateY(-4px); }
+  16% { transform: rotate(-12deg) translateY(-1px); }
+  24% { transform: rotate(-32deg) translateY(-4px); }
+  32% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
 }
 
 /* ---- CELEBRATING: both arms up, happy bounce, intense glow ---- */
