@@ -180,10 +180,21 @@ export default function ContactForm() {
   const handleComplete = async () => {
     setSending(true);
     setSendError(null);
+
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      setSendError("Config lipsă: credențiale EmailJS nedefinite.");
+      setSending(false);
+      return;
+    }
+
     try {
-      await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+      const result = await emailjs.send(
+        serviceId,
+        templateId,
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -191,13 +202,15 @@ export default function ContactForm() {
           budget: formData.budget,
           message: formData.message,
         },
-        { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY! }
+        { publicKey }
       );
+      console.log("EmailJS success:", result.status, result.text);
       setSubmitted(true);
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : JSON.stringify(err);
-      console.error("EmailJS error:", err);
-      setSendError(msg || t("error"));
+      const e = err as { status?: number; text?: string; message?: string };
+      const msg = e?.text || e?.message || JSON.stringify(err);
+      console.error("EmailJS error:", e?.status, msg);
+      setSendError(`Eroare ${e?.status ?? ""}: ${msg}`);
     } finally {
       setSending(false);
     }
