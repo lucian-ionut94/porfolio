@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://lucianionut.ro",
     languages: {
-      "ro": "https://lucianionut.ro/ro",
+      "ro": "https://lucianionut.ro",
       "en": "https://lucianionut.ro/en",
     },
   },

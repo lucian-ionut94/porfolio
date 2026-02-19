@@ -1,7 +1,7 @@
 import { getPathname } from "@/i18n/navigation";
 import type { routing } from "@/i18n/routing";
 
-export const BASE_URL = "https://lucianionut.com";
+export const BASE_URL = "https://lucianionut.ro";
 const DEFAULT_LOCALE = "ro";
 
 type Locale = (typeof routing.locales)[number];
