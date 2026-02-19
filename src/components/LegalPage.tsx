@@ -47,8 +47,8 @@ export default function LegalPage({ pageKey }: LegalPageProps) {
         <div className="mt-12 pt-8 border-t border-border">
           <p className="text-sm text-[#a9a9bd]">
             {t("contact_note")}{" "}
-            <a href="mailto:contact@lucianionut.com" className="text-primary hover:underline">
-              contact@lucianionut.com
+            <a href="mailto:ardeleanulucianionut@gmail.com" className="text-primary hover:underline">
+              ardeleanulucianionut@gmail.com
             </a>
           </p>
         </div>

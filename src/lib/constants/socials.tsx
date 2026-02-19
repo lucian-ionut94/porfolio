@@ -45,7 +45,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     name: "Email",
-    href: "mailto:contact@lucianionut.ro",
+    href: "mailto:ardeleanulucianionut@gmail.com",
     icon: (
       <svg className="w-[18px] h-[18px]" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24" aria-hidden="true">
         <rect width="20" height="16" x="2" y="4" rx="2" />
