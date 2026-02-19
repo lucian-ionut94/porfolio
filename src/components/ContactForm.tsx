@@ -194,8 +194,10 @@ export default function ContactForm() {
         { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY! }
       );
       setSubmitted(true);
-    } catch {
-      setSendError(t("error"));
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : JSON.stringify(err);
+      console.error("EmailJS error:", err);
+      setSendError(msg || t("error"));
     } finally {
       setSending(false);
     }
