@@ -82,21 +82,7 @@ export default async function RootLayout({
         {/* Facebook publisher meta */}
         <meta property="article:publisher" content={FACEBOOK_PAGE_URL} />
 
-        {/* Google Analytics 4 */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-QY89V1JETV"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-QY89V1JETV');
-`,
-          }}
-        />
+        {/* GA loaded conditionally via CookieConsent component */}
       </head>
       <body
         className={`${clashDisplay.variable} ${satoshi.variable} ${geistMono.variable} antialiased`}

@@ -11,6 +11,7 @@ import { routing } from "@/i18n/routing";
 import NavigationWrapper from "@/components/NavigationWrapper";
 import Footer from "@/components/Footer";
 import ProgressBar from "@/components/ProgressBar";
+import CookieConsent from "@/components/CookieConsent";
 import { siteUrl } from "@/lib/site-url";
 
 const Chatbot = dynamic(() => import("@/components/Chatbot"));
@@ -67,6 +68,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       <main className="min-h-screen">{children}</main>
       <Footer />
       <Chatbot />
+      <CookieConsent />
     </NextIntlClientProvider>
   );
 }
