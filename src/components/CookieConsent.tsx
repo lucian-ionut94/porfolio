@@ -90,7 +90,7 @@ export default function CookieConsent() {
                 {t("message")}{" "}
                 <Link
                   href="/privacy"
-                  className="text-lime-400 hover:text-lime-300 underline underline-offset-2 transition-colors"
+                  className="inline-block text-lime-400 hover:text-lime-300 underline underline-offset-2 transition-colors px-1 py-0.5"
                 >
                   {t("privacy_policy")}
                 </Link>
