@@ -36,6 +36,46 @@ export default function ScrollReveal({
     const els = wordsRef.current.filter(Boolean);
     if (els.length === 0 || !containerRef.current) return;
 
+    const isMobile = window.matchMedia("(max-width: 767px)").matches;
+
+    if (isMobile) {
+      // Intersection Observer — reveal words sequentially when container enters view
+      if (activeColor && inactiveColor) {
+        els.forEach((el) => { el.style.color = inactiveColor; });
+      } else {
+        els.forEach((el) => {
+          el.style.opacity = "0.15";
+          el.style.filter = "blur(4px)";
+        });
+      }
+
+      let revealed = false;
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting && !revealed) {
+            revealed = true;
+            observer.disconnect();
+            els.forEach((el, i) => {
+              setTimeout(() => {
+                if (activeColor && inactiveColor) {
+                  el.style.transition = "color 0.4s ease";
+                  el.style.color = activeColor;
+                } else {
+                  el.style.transition = "opacity 0.4s ease, filter 0.4s ease";
+                  el.style.opacity = "1";
+                  el.style.filter = "blur(0px)";
+                }
+              }, i * 25);
+            });
+          }
+        },
+        { threshold: 0.2 }
+      );
+      observer.observe(containerRef.current);
+      return () => observer.disconnect();
+    }
+
+    // Desktop: GSAP ScrollTrigger scrub
     if (activeColor && inactiveColor) {
       gsap.set(els, { color: inactiveColor });
     } else {

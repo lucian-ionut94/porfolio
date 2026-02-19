@@ -20,7 +20,8 @@ export default function Marquee() {
     container.appendChild(container.children[0].cloneNode(true));
 
     let offset = 0;
-    const speed = 0.26;
+    const isMobile = window.matchMedia("(max-width: 767px)").matches;
+    const speed = isMobile ? 0.52 : 0.26;
     let rafId: number;
 
     const tick = () => {

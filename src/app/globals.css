@@ -32,6 +32,13 @@
   color: #a9a9bd;
 }
 
+/* iOS zoom fix — prevents auto-zoom on input focus (requires font-size >= 16px) */
+input,
+textarea,
+select {
+  font-size: 16px !important;
+}
+
 /* Base */
 body {
   background-color: var(--color-background);

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import emailjs from "@emailjs/browser";
 import Stepper from "./reactbits/Stepper";
 import { motion } from "framer-motion";
 
@@ -15,6 +16,8 @@ export default function ContactForm() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [sendError, setSendError] = useState<string | null>(null);
 
   const update = (field: string, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
@@ -174,6 +177,30 @@ export default function ContactForm() {
     },
   ];
 
+  const handleComplete = async () => {
+    setSending(true);
+    setSendError(null);
+    try {
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          project_type: formData.projectType,
+          budget: formData.budget,
+          message: formData.message,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
+      setSubmitted(true);
+    } catch {
+      setSendError(t("error"));
+    } finally {
+      setSending(false);
+    }
+  };
+
   if (submitted) {
     return (
       <motion.div
@@ -194,12 +221,17 @@ export default function ContactForm() {
 
   return (
     <div>
+      {sendError && (
+        <div className="mb-4 px-4 py-3 rounded-xl bg-error/10 border border-error/30 text-error text-sm">
+          {sendError}
+        </div>
+      )}
       <Stepper
         steps={steps}
-        onComplete={() => setSubmitted(true)}
+        onComplete={handleComplete}
         nextLabel={t("steps.next")}
         prevLabel={t("steps.back")}
-        completeLabel={t("send")}
+        completeLabel={sending ? t("sending") : t("send")}
       />
     </div>
   );

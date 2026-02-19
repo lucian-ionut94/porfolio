@@ -295,7 +295,7 @@ function RotatingBadge() {
   return (
     <Link
       href="/contact"
-      className="bg-zinc-900 absolute -right-[20px] -bottom-[20px] grid aspect-square h-fit w-[35%] min-w-[110px] max-w-[150px] place-content-center rounded-full p-2 shadow-lg"
+      className="bg-zinc-900 absolute right-3 bottom-3 sm:-right-[20px] sm:-bottom-[20px] grid aspect-square h-fit w-[28%] sm:w-[35%] min-w-[90px] sm:min-w-[110px] max-w-[120px] sm:max-w-[150px] place-content-center rounded-full p-2 shadow-lg"
     >
       {/* Inner border circle + arrow */}
       <div className="flex items-center justify-center border border-zinc-700 absolute h-[50%] w-[50%] translate-x-1/2 translate-y-1/2 rounded-full">
@@ -440,14 +440,14 @@ export default function AboutPageContent({ experiences = [], aboutImage }: About
             <div className="self-start">
               <Magnet strength={0.15} range={120}>
                 <a
-                  href="/resume.pdf"
+                  href="https://www.linkedin.com/in/lucian-ardeleanu-04977a140/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group relative inline-block rounded-full border border-white/80 px-8 py-3 text-sm font-semibold text-foreground overflow-hidden transition-transform duration-[400ms] hover:scale-x-[1.02] hover:duration-[600ms]"
                 >
                   <span className="absolute inset-x-0 bottom-0 h-full bg-white rounded-none transition-all duration-500 ease-[cubic-bezier(0.4,0,0,1)] translate-y-full group-hover:translate-y-0" />
                   <span className="relative block text-center transition-colors duration-500 group-hover:text-black">
-                    {t("hero_resume")}
+                    LinkedIn
                   </span>
                 </a>
               </Magnet>
