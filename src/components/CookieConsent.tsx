@@ -86,7 +86,7 @@ export default function CookieConsent() {
 
             {/* Text */}
             <div className="flex-1 min-w-0">
-              <p className="text-xs text-zinc-400 leading-relaxed line-clamp-2">
+              <p className="!text-[14px] text-zinc-400 leading-relaxed line-clamp-2">
                 {t("message")}{" "}
                 <Link
                   href="/privacy"
