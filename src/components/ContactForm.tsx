@@ -181,20 +181,10 @@ export default function ContactForm() {
     setSending(true);
     setSendError(null);
 
-    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
-
-    if (!serviceId || !templateId || !publicKey) {
-      setSendError("Config lipsă: credențiale EmailJS nedefinite.");
-      setSending(false);
-      return;
-    }
-
     try {
       const result = await emailjs.send(
-        serviceId,
-        templateId,
+        "service_r39wo8l",
+        "template_bgdn6lc",
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -202,7 +192,7 @@ export default function ContactForm() {
           budget: formData.budget,
           message: formData.message,
         },
-        { publicKey }
+        { publicKey: "Jf43kWJ5b_LTDnOdt" }
       );
       console.log("EmailJS success:", result.status, result.text);
       setSubmitted(true);
