@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { getSiteSettings } from "@/lib/queries/site-settings";
 import { FACEBOOK_PAGE_URL } from "@/lib/constants/socials";
 
 const clashDisplay = localFont({
@@ -74,40 +73,30 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ locale?: string }>;
 }>) {
-  const { locale } = await params;
-  const settings = await getSiteSettings();
-  const gaId = "G-QY89V1JETV";
-
   return (
-    <html lang={locale || "ro"} suppressHydrationWarning>
+    <html lang="ro" suppressHydrationWarning>
       <head>
         {/* Facebook publisher meta */}
         <meta property="article:publisher" content={FACEBOOK_PAGE_URL} />
 
         {/* Google Analytics 4 */}
-        {gaId && (
-          <>
-            <script
-              async
-              src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
-            />
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-QY89V1JETV"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', '${gaId}', { page_path: window.location.pathname });
+gtag('config', 'G-QY89V1JETV');
 `,
-              }}
-            />
-          </>
-        )}
+          }}
+        />
       </head>
       <body
         className={`${clashDisplay.variable} ${satoshi.variable} ${geistMono.variable} antialiased`}
