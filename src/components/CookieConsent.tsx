@@ -86,11 +86,11 @@ export default function CookieConsent() {
 
             {/* Text */}
             <div className="flex-1 min-w-0">
-              <p className="text-sm text-zinc-300 leading-relaxed">
+              <p className="text-xs text-zinc-400 leading-relaxed line-clamp-2">
                 {t("message")}{" "}
                 <Link
                   href="/privacy"
-                  className="inline-block text-lime-400 hover:text-lime-300 underline underline-offset-2 transition-colors px-1 py-0.5"
+                  className="text-lime-400 hover:text-lime-300 underline underline-offset-2 transition-colors"
                 >
                   {t("privacy_policy")}
                 </Link>
