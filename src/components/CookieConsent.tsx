@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
 const GA_ID = "G-QY89V1JETV";
@@ -29,7 +29,6 @@ function loadGA() {
 
 export default function CookieConsent() {
   const t = useTranslations("cookie");
-  const locale = useLocale();
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -53,8 +52,6 @@ export default function CookieConsent() {
     localStorage.setItem("cookie_consent", "essential");
     setVisible(false);
   };
-
-  const privacyHref = locale === "ro" ? "/confidentialitate" : "/privacy";
 
   return (
     <AnimatePresence>
@@ -92,7 +89,7 @@ export default function CookieConsent() {
               <p className="text-sm text-zinc-300 leading-relaxed">
                 {t("message")}{" "}
                 <Link
-                  href={privacyHref as "/privacy"}
+                  href="/privacy"
                   className="text-lime-400 hover:text-lime-300 underline underline-offset-2 transition-colors"
                 >
                   {t("privacy_policy")}
