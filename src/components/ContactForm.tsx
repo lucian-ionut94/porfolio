@@ -191,7 +191,7 @@ export default function ContactForm() {
           budget: formData.budget,
           message: formData.message,
         },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+        { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY! }
       );
       setSubmitted(true);
     } catch {
