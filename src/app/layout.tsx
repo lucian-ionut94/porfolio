@@ -81,7 +81,7 @@ export default async function RootLayout({
 }>) {
   const { locale } = await params;
   const settings = await getSiteSettings();
-  const gaId = settings.ga_measurement_id || "G-QY89V1JETV";
+  const gaId = "G-QY89V1JETV";
 
   return (
     <html lang={locale || "ro"} suppressHydrationWarning>
