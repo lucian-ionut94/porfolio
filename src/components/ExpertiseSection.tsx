@@ -121,7 +121,7 @@ interface ExpertiseSectionProps {
 
 export default function ExpertiseSection({ expertiseImages }: ExpertiseSectionProps) {
   const t = useTranslations("expertise");
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
   const imageMap: Record<string, string | undefined> = {
     development: expertiseImages?.development,
