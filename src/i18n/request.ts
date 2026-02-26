@@ -61,6 +61,28 @@ async function getTranslationsFromDb(
   }
 }
 
+function deepMerge(
+  base: Record<string, any>,
+  override: Record<string, any>
+): Record<string, any> {
+  const result = { ...base };
+  for (const key of Object.keys(override)) {
+    if (
+      typeof override[key] === "object" &&
+      override[key] !== null &&
+      !Array.isArray(override[key]) &&
+      typeof base[key] === "object" &&
+      base[key] !== null &&
+      !Array.isArray(base[key])
+    ) {
+      result[key] = deepMerge(base[key], override[key]);
+    } else {
+      result[key] = override[key];
+    }
+  }
+  return result;
+}
+
 export default getRequestConfig(async ({ requestLocale }) => {
   let locale = await requestLocale;
 
@@ -69,10 +91,10 @@ export default getRequestConfig(async ({ requestLocale }) => {
     locale = routing.defaultLocale;
   }
 
-  // Try Supabase first, fall back to JSON files
+  // Always load JSON as base, then override with Supabase values
+  const jsonMessages = (await import(`../../messages/${locale}.json`)).default;
   const dbMessages = await getTranslationsFromDb(locale);
-  const messages =
-    dbMessages ?? (await import(`../../messages/${locale}.json`)).default;
+  const messages = dbMessages ? deepMerge(jsonMessages, dbMessages) : jsonMessages;
 
   return {
     locale,
