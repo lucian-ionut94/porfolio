@@ -554,7 +554,7 @@ export default function AboutPageContent({ experiences = [], aboutImage }: About
                     </p>
                     <p className="text-[13px] text-[#a9a9bd]">@{exp.company}</p>
                   </div>
-                  <span className="text-[13px] text-[#a9a9bd] whitespace-nowrap hidden sm:block">
+                  <span className="text-[13px] text-[#a9a9bd] whitespace-nowrap">
                     {locale === "ro" ? exp.period_ro || exp.period_en : exp.period_en}
                   </span>
                 </div>
