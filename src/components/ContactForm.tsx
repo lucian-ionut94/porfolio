@@ -88,18 +88,18 @@ export default function ContactForm() {
   };
 
   const projectTypes = [
-    { key: "wordpress", label: t("project_types.wordpress") },
-    { key: "react", label: t("project_types.react") },
-    { key: "laravel", label: t("project_types.laravel") },
+    { key: "prezentare", label: t("project_types.prezentare") },
     { key: "ecommerce", label: t("project_types.ecommerce") },
+    { key: "design", label: t("project_types.design") },
+    { key: "seo", label: t("project_types.seo") },
     { key: "other", label: t("project_types.other") },
   ];
 
   const budgets = [
-    { key: "small", label: t("budgets.small") },
-    { key: "medium", label: t("budgets.medium") },
-    { key: "large", label: t("budgets.large") },
-    { key: "enterprise", label: t("budgets.enterprise") },
+    { key: "sub200", label: t("budgets.sub200") },
+    { key: "200_500", label: t("budgets.200_500") },
+    { key: "500_1000", label: t("budgets.500_1000") },
+    { key: "peste1000", label: t("budgets.peste1000") },
   ];
 
   const input = (hasError?: boolean) =>

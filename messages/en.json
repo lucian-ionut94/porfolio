@@ -175,18 +175,18 @@
     "message": "Message",
     "project_type": "Project Type",
     "project_types": {
-      "wordpress": "WordPress Theme / Plugin",
-      "react": "React / Next.js Application",
-      "laravel": "Laravel Application",
+      "prezentare": "Presentation Website",
       "ecommerce": "Online Store",
+      "design": "Design",
+      "seo": "SEO",
       "other": "Other"
     },
     "budget": "Estimated Budget",
     "budgets": {
-      "small": "Under €1,000",
-      "medium": "€1,000 - €5,000",
-      "large": "€5,000 - €15,000",
-      "enterprise": "Over €15,000"
+      "sub200": "Under €200",
+      "200_500": "€200 – €500",
+      "500_1000": "€500 – €1,000",
+      "peste1000": "Over €1,000"
     },
     "send": "Send Message",
     "sending": "Sending...",

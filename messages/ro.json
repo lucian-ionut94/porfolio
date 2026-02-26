@@ -175,18 +175,18 @@
     "message": "Mesaj",
     "project_type": "Tip Proiect",
     "project_types": {
-      "wordpress": "Temă / Plugin WordPress",
-      "react": "Aplicație React / Next.js",
-      "laravel": "Aplicație Laravel",
+      "prezentare": "Site Prezentare",
       "ecommerce": "Magazin Online",
+      "design": "Design",
+      "seo": "SEO",
       "other": "Altele"
     },
     "budget": "Buget Estimat",
     "budgets": {
-      "small": "Sub 1.000€",
-      "medium": "1.000€ - 5.000€",
-      "large": "5.000€ - 15.000€",
-      "enterprise": "Peste 15.000€"
+      "sub200": "Sub 200€",
+      "200_500": "200€ – 500€",
+      "500_1000": "500€ – 1.000€",
+      "peste1000": "Peste 1.000€"
     },
     "send": "Trimite Mesaj",
     "sending": "Se trimite...",
