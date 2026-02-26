@@ -34,11 +34,11 @@
   },
   "portfolio": {
     "label": "MY WORK",
-    "title": "Selected Projects",
+    "title": "Selected projects",
     "subtitle": "Here's a curated selection showcasing my expertise and the achieved results.",
-    "view_all": "View All Projects",
-    "view_project": "View Project",
-    "view_code": "Source Code",
+    "view_all": "View all projects",
+    "view_project": "View project",
+    "view_code": "Source code",
     "filter_all": "All",
     "filter_wordpress": "WordPress",
     "filter_react": "React",
@@ -46,28 +46,28 @@
     "filter_opencart": "OpenCart"
   },
   "skills": {
-    "title": "What I Do Best",
+    "title": "What I do best",
     "subtitle": "Specialized skills and services I bring to every project.",
-    "frontend": "Frontend Development",
+    "frontend": "Frontend development",
     "frontend_desc": "Modern and responsive interfaces with React, Next.js, TypeScript and Tailwind CSS. Smooth animations and interactive experiences.",
-    "backend": "Backend Development",
+    "backend": "Backend development",
     "backend_desc": "Robust APIs and scalable systems with Laravel, PHP and Node.js. MySQL and PostgreSQL databases.",
-    "wordpress": "WordPress Development",
+    "wordpress": "WordPress development",
     "wordpress_desc": "Custom themes, plugins and full WordPress solutions. Performance optimization and security hardening.",
-    "ecommerce": "E-Commerce Solutions",
+    "ecommerce": "E-commerce solutions",
     "ecommerce_desc": "OpenCart, WooCommerce and custom e-commerce platforms. Payment integration and inventory management.",
-    "performance": "Performance Optimization",
+    "performance": "Performance optimization",
     "performance_desc": "Core Web Vitals optimization, caching strategies, lazy loading and code splitting for blazing-fast sites.",
-    "consulting": "Technical Consulting",
+    "consulting": "Technical consulting",
     "consulting_desc": "Architecture planning, code reviews, technology stack recommendations and development strategy."
   },
   "expertise": {
     "label": "SPECIALITY",
-    "title": "Areas of Expertise",
+    "title": "Areas of expertise",
     "development": "Development",
     "development_desc": "Building robust web applications with modern technologies. From responsive frontends to scalable backend systems, I deliver clean, performant code.",
     "development_skills": "React,Next.js,TypeScript,Node.js,Laravel,PHP",
-    "uiux": "UI/UX Design",
+    "uiux": "UI/UX design",
     "uiux_desc": "Creating intuitive and beautiful user interfaces with a focus on user experience. Translating complex requirements into elegant, accessible designs.",
     "uiux_skills": "Figma,Adobe XD,Prototyping,Wireframing",
     "branding": "Branding",
@@ -86,15 +86,15 @@
   },
   "articles": {
     "label": "RECENT ARTICLES",
-    "title": "From the Blog",
+    "title": "From the blog",
     "subtitle": "Thoughts, tutorials, and insights about web development and design.",
-    "read_more": "Read Article",
-    "view_all": "View All Articles",
+    "read_more": "Read article",
+    "view_all": "View all articles",
     "min_read": "min read"
   },
   "blog": {
     "label": "BLOG",
-    "title": "Articles & Insights",
+    "title": "Articles & insights",
     "subtitle": "Thoughts, tutorials, and insights about web development, design, and the freelance journey.",
     "all": "All",
     "empty": "No articles in this category yet.",
@@ -103,24 +103,24 @@
   "cta": {
     "badge": "Available for work",
     "title": "Let's create your next big idea.",
-    "button": "Contact Me"
+    "button": "Contact me"
   },
   "aboutPage": {
-    "title": "About Me",
+    "title": "About me",
     "bio": "I'm Lucian Ionuț, a full-stack web developer with over 5 years of experience crafting digital experiences. I specialize in building modern, performant web applications using React, Next.js, Laravel, and WordPress. My passion lies in transforming complex ideas into elegant, user-friendly solutions that drive real business results.",
     "circular_text": "LETS TALK • LETS TALK • LETS TALK • ",
     "hero_heading_1": "A ",
     "hero_highlight": "creative developer",
     "hero_heading_2": " & digital designer",
     "hero_description": "I collaborate with brands globally to design impactful, mission-focused websites that drive results and achieve business goals.",
-    "hero_resume": "My Resume",
+    "hero_resume": "My resume",
     "experience_label_1": "WORK",
     "experience_label_2": "HISTORY",
     "experience_title": "Experience",
     "experience_description": "I have worked with some of the most innovative industry leaders to help build their top-notch products.",
-    "experience_show_more": "Show More",
+    "experience_show_more": "Show more",
     "process_label": "STEPS I FOLLOW",
-    "process_title": "My Design Process",
+    "process_title": "My design process",
     "process_description": "I have worked with some of the most innovative industry leaders to help build their top-notch products.",
     "process_steps": {
       "discovery": "Discovery",
@@ -131,65 +131,65 @@
       "design_desc": "The most fun part of all - adding pizzaz to the wireframes and bring it to life.",
       "development": "Development",
       "development_desc": "The design may be final but it needs to be functional and practical. Development is key.",
-      "qa": "Quality Assurance",
+      "qa": "Quality assurance",
       "qa_desc": "Website load times, SEO, file optimization, etc., weigh in to the quality of the site."
     },
     "stats": {
-      "years": "Years Experience",
-      "projects": "Projects Delivered",
-      "clients": "Happy Clients"
+      "years": "Years experience",
+      "projects": "Projects delivered",
+      "clients": "Happy clients"
     },
     "bento": {
       "skills": {
-        "title": "Technical Skills",
+        "title": "Technical skills",
         "description": "WordPress themes from scratch, React & Next.js apps, Laravel CMS platforms, and OpenCart e-commerce stores. From frontend animations to backend APIs — I cover the full stack."
       },
       "journey": {
-        "title": "My Journey",
+        "title": "My journey",
         "description": "Started building WordPress sites during university, then sold themes on ThemeForest with 2600+ sales. Grew from junior developer to running my own freelance practice, shipping production code for clients worldwide."
       },
       "tools": {
-        "title": "Tools & Workflow",
+        "title": "Tools & workflow",
         "description": "VS Code, Git, Docker, Figma for design handoffs, and CI/CD pipelines for automated deployments. Every project follows a structured workflow from repo setup to production."
       },
       "approach": {
-        "title": "My Approach",
+        "title": "My approach",
         "description": "Clean code, performance-first, and pixel-perfect execution. I start by understanding the business goals, plan the architecture, then build iteratively with continuous client feedback until launch."
       },
       "marketplace": {
-        "title": "Marketplace Experience",
+        "title": "Marketplace experience",
         "description": "Over 2600 sales on ThemeForest & CodeCanyon with 2 WordPress themes and 6 Laravel CMS products. Built for the international market with a focus on performance, documentation, and user experience."
       },
       "collaboration": {
-        "title": "Team & Clients",
+        "title": "Team & clients",
         "description": "Worked closely with designers, project managers, and clients from agencies to startups. I adapt to any workflow — whether it's a solo freelance project or collaborating within a full product team."
       }
     }
   },
   "contact": {
     "label": "GET IN TOUCH",
-    "title": "Let's Work Together",
+    "title": "Let's work together",
     "subtitle": "Have a project in mind? I'd love to hear about it. Fill out the form and I'll get back to you as soon as possible.",
     "name": "Name",
     "email": "Email",
     "message": "Message",
-    "phone": "Phone Number",
-    "project_type": "Project Type",
+    "phone": "Phone number",
+    "project_type": "Project type",
     "project_types": {
-      "prezentare": "Presentation Website",
-      "ecommerce": "Online Store",
+      "prezentare": "Presentation website",
+      "ecommerce": "Online store",
       "design": "Design",
       "seo": "SEO",
       "other": "Other"
     },
-    "budget": "Estimated Budget",
+    "budget": "Estimated budget",
     "budgets": {
       "sub200": "Under €200",
       "200_500": "€200 – €500",
       "500_1000": "€500 – €1,000",
       "peste1000": "Over €1,000"
     },
-    "send": "Send Message",
+    "send": "Send message",
     "sending": "Sending...",
     "success": "Message sent successfully!",
     "error": "An error occurred. Please try again.",
@@ -199,11 +199,11 @@
     "info_location": "Romania, EU",
     "info_location_label": "Location",
     "info_email_label": "Email",
-    "info_response_label": "Response Time",
+    "info_response_label": "Response time",
     "info_response_value": "Within 24 hours",
-    "form_title": "Send a Message",
+    "form_title": "Send a message",
     "faq_label": "FAQs",
-    "faq_title": "Have Questions?",
+    "faq_title": "Have questions?",
     "faq_subtitle": "Here are some answers to the most common questions I get from clients.",
     "faq_items": {
       "q1": "What is your current role?",
@@ -216,17 +216,17 @@
       "a4": "Yes, I'm open to full-time remote positions with the right team and project. I'm particularly interested in roles focused on React/Next.js, Laravel, or WordPress development where I can make a meaningful impact. Let's discuss the details!"
     },
     "steps": {
-      "info": "Your Information",
-      "project": "Project Details",
-      "message": "Your Message",
-      "confirm": "Review & Submit",
+      "info": "Your information",
+      "project": "Project details",
+      "message": "Your message",
+      "confirm": "Review & submit",
       "next": "Next",
       "back": "Back",
       "messagePlaceholder": "Tell me about your project, goals, and timeline..."
     }
   },
   "chatbot": {
-    "title": "Virtual Assistant",
+    "title": "Virtual assistant",
     "placeholder": "Type a message...",
     "greeting": "Hi! I'm Lucian's virtual assistant. How can I help you?",
     "send": "Send",
@@ -245,10 +245,10 @@
     "nav_blog": "Blog",
     "nav_contact": "Contact",
     "legal": "Legal",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service",
+    "privacy": "Privacy policy",
+    "terms": "Terms of service",
     "gdpr": "GDPR",
-    "contact_title": "Get in Touch",
+    "contact_title": "Get in touch",
     "available": "Available for projects",
     "rights": "All rights reserved.",
     "made_with": "Designed & built with Next.js, React & TypeScript"
@@ -257,12 +257,12 @@
     "label": "CASE STUDY",
     "overview": "Overview",
     "the_results": "Results",
-    "preview": "Design Screens",
-    "live_preview": "Live Preview",
-    "source_code": "Source Code",
+    "preview": "Design screens",
+    "live_preview": "Live preview",
+    "source_code": "Source code",
     "prev_project": "Previous",
     "next_project": "Next",
-    "back_to_all": "All Projects"
+    "back_to_all": "All projects"
   },
   "common": {
     "loading": "Loading...",
@@ -272,57 +272,57 @@
   },
   "cookie": {
     "message": "This site uses cookies to improve your experience.",
-    "accept_all": "Accept All",
-    "essential_only": "Essential Only",
-    "privacy_policy": "Privacy Policy"
+    "accept_all": "Accept all",
+    "essential_only": "Essential only",
+    "privacy_policy": "Privacy policy"
   },
   "privacy": {
-    "title": "Privacy Policy",
-    "back": "Back to Home",
+    "title": "Privacy policy",
+    "back": "Back to home",
     "last_updated": "Last updated: February 2026",
     "contact_note": "For any questions regarding this policy, contact us at",
     "sections": ["0", "1", "2", "3", "4"],
-    "section_0_title": "Information We Collect",
+    "section_0_title": "Information we collect",
     "section_0_text": "We collect information you provide directly, such as your name and email address when using the contact form. We also collect basic analytics data (page views, browser type) through cookies to improve the website experience.",
-    "section_1_title": "How We Use Your Information",
+    "section_1_title": "How we use your information",
     "section_1_text": "Your information is used solely to respond to your inquiries, improve our services, and maintain the website. We never sell or share your personal data with third parties for marketing purposes.",
     "section_2_title": "Cookies",
     "section_2_text": "This website uses essential cookies for functionality and optional analytics cookies to understand how visitors interact with the site. You can manage your cookie preferences at any time through the cookie banner.",
-    "section_3_title": "Data Retention",
+    "section_3_title": "Data retention",
     "section_3_text": "Contact form submissions are retained only as long as necessary to address your inquiry. Analytics data is anonymized and retained for up to 12 months.",
-    "section_4_title": "Your Rights",
+    "section_4_title": "Your rights",
     "section_4_text": "You have the right to access, correct, or delete your personal data at any time. You can also withdraw consent for non-essential cookies. To exercise these rights, please contact us via email."
   },
   "terms": {
-    "title": "Terms of Service",
-    "back": "Back to Home",
+    "title": "Terms of service",
+    "back": "Back to home",
     "last_updated": "Last updated: February 2026",
     "contact_note": "For any questions regarding these terms, contact us at",
     "sections": ["0", "1", "2", "3"],
-    "section_0_title": "Use of This Website",
+    "section_0_title": "Use of this website",
     "section_0_text": "This website is a personal portfolio showcasing development work and services. All content, including text, code examples, and designs, is provided for informational purposes. You may browse freely, but reproducing or distributing content without permission is not allowed.",
-    "section_1_title": "Intellectual Property",
+    "section_1_title": "Intellectual property",
     "section_1_text": "All original content on this website, including designs, code, and written material, is the intellectual property of Lucian Ionuț unless otherwise stated. Third-party logos, trademarks, and technologies mentioned belong to their respective owners.",
-    "section_2_title": "Freelance Services",
+    "section_2_title": "Freelance services",
     "section_2_text": "Any freelance work or development services discussed through this website are subject to separate agreements. Project scope, timelines, and pricing are determined on a per-project basis through direct communication.",
-    "section_3_title": "Limitation of Liability",
+    "section_3_title": "Limitation of liability",
     "section_3_text": "This website is provided as-is. While we strive for accuracy, we make no warranties about the completeness or reliability of the content. We are not liable for any damages arising from the use of this website."
   },
   "gdpr": {
-    "title": "GDPR Compliance",
-    "back": "Back to Home",
+    "title": "GDPR compliance",
+    "back": "Back to home",
     "last_updated": "Last updated: February 2026",
     "contact_note": "For GDPR-related requests, contact our data controller at",
     "sections": ["0", "1", "2", "3", "4"],
-    "section_0_title": "Data Controller",
+    "section_0_title": "Data controller",
     "section_0_text": "Lucian Ionuț acts as the data controller for personal data collected through this website. We process data in accordance with the General Data Protection Regulation (EU) 2016/679.",
-    "section_1_title": "Legal Basis for Processing",
+    "section_1_title": "Legal basis for processing",
     "section_1_text": "We process personal data based on: (a) your consent when submitting the contact form or accepting cookies, and (b) legitimate interest for essential website functionality and security.",
-    "section_2_title": "Data Subject Rights",
+    "section_2_title": "Data subject rights",
     "section_2_text": "Under GDPR, you have the right to: access your personal data, rectify inaccurate data, request erasure ('right to be forgotten'), restrict processing, data portability, and object to processing. We respond to all valid requests within 30 days.",
-    "section_3_title": "Data Transfers",
+    "section_3_title": "Data transfers",
     "section_3_text": "Your data is primarily processed within the EU/EEA. If any data is transferred outside the EEA (e.g., through analytics services), appropriate safeguards are in place, including Standard Contractual Clauses.",
-    "section_4_title": "Data Protection",
+    "section_4_title": "Data protection",
     "section_4_text": "We implement appropriate technical and organizational measures to protect your data, including encrypted connections (HTTPS), secure hosting, and limited data access. In the unlikely event of a data breach, affected individuals and the relevant supervisory authority will be notified within 72 hours."
   }
 }

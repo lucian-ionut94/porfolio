@@ -34,11 +34,11 @@
   },
   "portfolio": {
     "label": "PROIECTELE MELE",
-    "title": "Proiecte Selectate",
+    "title": "Proiecte selectate",
     "subtitle": "O selecție de proiecte care demonstrează expertiza și rezultatele obținute.",
-    "view_all": "Vezi Toate Proiectele",
-    "view_project": "Vezi Proiect",
-    "view_code": "Cod Sursă",
+    "view_all": "Vezi toate proiectele",
+    "view_project": "Vezi proiect",
+    "view_code": "Cod sursă",
     "filter_all": "Toate",
     "filter_wordpress": "WordPress",
     "filter_react": "React",
@@ -46,28 +46,28 @@
     "filter_opencart": "OpenCart"
   },
   "skills": {
-    "title": "Ce Fac Cel Mai Bine",
+    "title": "Ce fac cel mai bine",
     "subtitle": "Abilități și servicii specializate pe care le aduc fiecărui proiect.",
-    "frontend": "Frontend Development",
+    "frontend": "Frontend development",
     "frontend_desc": "Interfețe moderne și responsive cu React, Next.js, TypeScript și Tailwind CSS. Animații fluide și experiențe interactive.",
-    "backend": "Backend Development",
+    "backend": "Backend development",
     "backend_desc": "API-uri robuste și sisteme scalabile cu Laravel, PHP și Node.js. Baze de date MySQL și PostgreSQL.",
-    "wordpress": "WordPress Development",
+    "wordpress": "WordPress development",
     "wordpress_desc": "Teme custom, plugin-uri și soluții WordPress complete. Optimizare performanță și securitate.",
-    "ecommerce": "Soluții E-Commerce",
+    "ecommerce": "Soluții e-commerce",
     "ecommerce_desc": "OpenCart, WooCommerce și platforme e-commerce personalizate. Integrare plăți și management inventar.",
-    "performance": "Optimizare Performanță",
+    "performance": "Optimizare performanță",
     "performance_desc": "Optimizare Core Web Vitals, strategii de caching, lazy loading și code splitting pentru site-uri ultra-rapide.",
-    "consulting": "Consultanță Tehnică",
+    "consulting": "Consultanță tehnică",
     "consulting_desc": "Planificare arhitectură, code reviews, recomandări tech stack și strategie de dezvoltare."
   },
   "expertise": {
     "label": "SPECIALIZARE",
-    "title": "Arii de Expertiză",
+    "title": "Arii de expertiță",
     "development": "Development",
     "development_desc": "Construiesc aplicații web robuste cu tehnologii moderne. De la frontend-uri responsive la sisteme backend scalabile, livrez cod curat și performant.",
     "development_skills": "React,Next.js,TypeScript,Node.js,Laravel,PHP",
-    "uiux": "UI/UX Design",
+    "uiux": "UI/UX design",
     "uiux_desc": "Creez interfețe intuitive și frumoase cu focus pe experiența utilizatorului. Transform cerințe complexe în design-uri elegante și accesibile.",
     "uiux_skills": "Figma,Adobe XD,Prototipare,Wireframing",
     "branding": "Branding",
@@ -86,15 +86,15 @@
   },
   "articles": {
     "label": "ARTICOLE RECENTE",
-    "title": "De pe Blog",
+    "title": "De pe blog",
     "subtitle": "Gânduri, tutoriale și perspective despre dezvoltare web și design.",
-    "read_more": "Citește Articolul",
-    "view_all": "Vezi Toate Articolele",
+    "read_more": "Citește articolul",
+    "view_all": "Vezi toate articolele",
     "min_read": "min citire"
   },
   "blog": {
     "label": "BLOG",
-    "title": "Articole & Perspective",
+    "title": "Articole & perspective",
     "subtitle": "Gânduri, tutoriale și perspective despre dezvoltare web, design și viața de freelancer.",
     "all": "Toate",
     "empty": "Niciun articol în această categorie.",
@@ -106,21 +106,21 @@
     "button": "Contactează-mă"
   },
   "aboutPage": {
-    "title": "Despre Mine",
+    "title": "Despre mine",
     "bio": "Sunt Lucian Ionuț, un dezvoltator web full-stack cu peste 5 ani de experiență în crearea de experiențe digitale. Mă specializez în construirea de aplicații web moderne și performante folosind React, Next.js, Laravel și WordPress. Pasiunea mea este transformarea ideilor complexe în soluții elegante și prietenoase cu utilizatorul, care aduc rezultate reale de business.",
     "circular_text": "HAI SA VORBIM • HAI SA VORBIM • ",
     "hero_heading_1": "Un ",
     "hero_highlight": "developer creativ",
     "hero_heading_2": " & designer digital",
     "hero_description": "Colaborez cu branduri din toata lumea pentru a crea website-uri impactante, orientate spre rezultate si obiective de business.",
-    "hero_resume": "CV-ul Meu",
+    "hero_resume": "CV-ul meu",
     "experience_label_1": "ISTORIC",
     "experience_label_2": "PROFESIONAL",
-    "experience_title": "Experienta",
+    "experience_title": "Experiență",
     "experience_description": "Am colaborat cu unii dintre cei mai inovatori lideri din industrie pentru a construi produse de top.",
-    "experience_show_more": "Vezi Mai Mult",
+    "experience_show_more": "Vezi mai mult",
     "process_label": "PAȘII MEI",
-    "process_title": "Procesul Meu de Design",
+    "process_title": "Procesul meu de design",
     "process_description": "Am colaborat cu unii dintre cei mai inovatori lideri din industrie pentru a construi produse de top.",
     "process_steps": {
       "discovery": "Descoperire",
@@ -131,65 +131,65 @@
       "design_desc": "Partea cea mai distractivă — adăugăm personalitate wireframe-urilor și le dăm viață.",
       "development": "Development",
       "development_desc": "Design-ul poate fi final, dar trebuie să fie funcțional și practic. Development-ul este cheia.",
-      "qa": "Quality Assurance",
+      "qa": "Quality assurance",
       "qa_desc": "Timpii de încărcare, SEO, optimizarea fișierelor etc. contribuie la calitatea site-ului."
     },
     "stats": {
-      "years": "Ani Experiență",
-      "projects": "Proiecte Livrate",
-      "clients": "Clienți Mulțumiți"
+      "years": "Ani experiență",
+      "projects": "Proiecte livrate",
+      "clients": "Clienți mulțumiți"
     },
     "bento": {
       "skills": {
-        "title": "Abilități Tehnice",
+        "title": "Abilități tehnice",
         "description": "Teme WordPress de la zero, aplicații React & Next.js, platforme CMS în Laravel și magazine OpenCart. De la animații frontend la API-uri backend — acopăr întregul stack."
       },
       "journey": {
-        "title": "Parcursul Meu",
+        "title": "Parcursul meu",
         "description": "Am început să construiesc site-uri WordPress în facultate, apoi am vândut teme pe ThemeForest cu peste 2600 de vânzări. Am crescut de la junior la propriul business de freelancing, livrând cod de producție pentru clienți din toată lumea."
       },
       "tools": {
-        "title": "Instrumente & Workflow",
+        "title": "Instrumente & workflow",
         "description": "VS Code, Git, Docker, Figma pentru design handoffs și pipeline-uri CI/CD pentru deploy-uri automatizate. Fiecare proiect urmează un workflow structurat de la setup la producție."
       },
       "approach": {
-        "title": "Abordarea Mea",
+        "title": "Abordarea mea",
         "description": "Cod curat, performanță-first și execuție pixel-perfect. Încep prin înțelegerea obiectivelor de business, planific arhitectura, apoi construiesc iterativ cu feedback continuu până la lansare."
       },
       "marketplace": {
-        "title": "Experiență Marketplace",
+        "title": "Experiență marketplace",
         "description": "Peste 2600 de vânzări pe ThemeForest & CodeCanyon cu 2 teme WordPress și 6 produse CMS în Laravel. Construite pentru piața internațională cu focus pe performanță, documentație și experiența utilizatorului."
       },
       "collaboration": {
-        "title": "Echipă & Clienți",
+        "title": "Echipă & clienți",
         "description": "Am lucrat îndeaproape cu designeri, project manageri și clienți — de la agenții la startup-uri. Mă adaptez la orice workflow, fie că e un proiect solo sau colaborare într-o echipă completă."
       }
     }
   },
   "contact": {
     "label": "CONTACTEAZĂ-MĂ",
-    "title": "Hai Să Lucrăm Împreună",
+    "title": "Hai să lucrăm împreună",
     "subtitle": "Ai un proiect în minte? Mi-ar plăcea să aud despre el. Completează formularul și revin cu un răspuns cât mai curând.",
     "name": "Nume",
     "email": "Email",
     "message": "Mesaj",
-    "phone": "Număr de Telefon",
-    "project_type": "Tip Proiect",
+    "phone": "Număr de telefon",
+    "project_type": "Tip proiect",
     "project_types": {
-      "prezentare": "Site Prezentare",
-      "ecommerce": "Magazin Online",
+      "prezentare": "Site prezentare",
+      "ecommerce": "Magazin online",
       "design": "Design",
       "seo": "SEO",
       "other": "Altele"
     },
-    "budget": "Buget Estimat",
+    "budget": "Buget estimat",
     "budgets": {
       "sub200": "Sub 200€",
       "200_500": "200€ – 500€",
       "500_1000": "500€ – 1.000€",
       "peste1000": "Peste 1.000€"
     },
-    "send": "Trimite Mesaj",
+    "send": "Trimite mesaj",
     "sending": "Se trimite...",
     "success": "Mesajul a fost trimis cu succes!",
     "error": "A apărut o eroare. Încearcă din nou.",
@@ -199,11 +199,11 @@
     "info_location": "România, UE",
     "info_location_label": "Locație",
     "info_email_label": "Email",
-    "info_response_label": "Timp de Răspuns",
+    "info_response_label": "Timp de răspuns",
     "info_response_value": "În 24 de ore",
-    "form_title": "Trimite un Mesaj",
+    "form_title": "Trimite un mesaj",
     "faq_label": "ÎNTREBĂRI",
-    "faq_title": "Ai Întrebări?",
+    "faq_title": "Ai întrebări?",
     "faq_subtitle": "Iată câteva răspunsuri la cele mai frecvente întrebări pe care le primesc de la clienți.",
     "faq_items": {
       "q1": "Care este rolul tău actual?",
@@ -216,17 +216,17 @@
       "a4": "Da, sunt deschis pentru poziții full-time remote cu echipa și proiectul potrivit. Sunt interesat în special de roluri focusate pe React/Next.js, Laravel sau dezvoltare WordPress unde pot aduce un impact semnificativ. Hai să discutăm detaliile!"
     },
     "steps": {
-      "info": "Informațiile Tale",
-      "project": "Detalii Proiect",
-      "message": "Mesajul Tău",
-      "confirm": "Revizuire & Trimitere",
+      "info": "Informațiile tale",
+      "project": "Detalii proiect",
+      "message": "Mesajul tău",
+      "confirm": "Revizuire & trimitere",
       "next": "Următorul",
       "back": "Înapoi",
       "messagePlaceholder": "Spune-mi despre proiectul tău, obiective și timeline..."
     }
   },
   "chatbot": {
-    "title": "Asistent Virtual",
+    "title": "Asistent virtual",
     "placeholder": "Scrie un mesaj...",
     "greeting": "Salut! Sunt asistentul virtual al lui Lucian. Cu ce te pot ajuta?",
     "send": "Trimite",
@@ -245,8 +245,8 @@
     "nav_blog": "Blog",
     "nav_contact": "Contact",
     "legal": "Legal",
-    "privacy": "Politica de Confidențialitate",
-    "terms": "Termeni și Condiții",
+    "privacy": "Politica de confidențialitate",
+    "terms": "Termeni și condiții",
     "gdpr": "GDPR",
     "contact_title": "Contact",
     "available": "Disponibil pentru proiecte",
@@ -255,14 +255,14 @@
   },
   "projectDetail": {
     "label": "STUDIU DE CAZ",
-    "overview": "Prezentare Generală",
+    "overview": "Prezentare generală",
     "the_results": "Rezultate",
-    "preview": "Design Screens",
-    "live_preview": "Previzualizare Live",
-    "source_code": "Cod Sursă",
+    "preview": "Design screens",
+    "live_preview": "Previzualizare live",
+    "source_code": "Cod sursă",
     "prev_project": "Anterior",
     "next_project": "Următorul",
-    "back_to_all": "Toate Proiectele"
+    "back_to_all": "Toate proiectele"
   },
   "common": {
     "loading": "Se încarcă...",
@@ -272,12 +272,12 @@
   },
   "cookie": {
     "message": "Acest site folosește cookie-uri pentru a îmbunătăți experiența ta.",
-    "accept_all": "Acceptă Toate",
-    "essential_only": "Doar Esențiale",
-    "privacy_policy": "Politica de Confidențialitate"
+    "accept_all": "Acceptă toate",
+    "essential_only": "Doar esențiale",
+    "privacy_policy": "Politica de confidențialitate"
   },
   "privacy": {
-    "title": "Politica de Confidențialitate",
+    "title": "Politica de confidențialitate",
     "back": "Înapoi la pagina principală",
     "last_updated": "Ultima actualizare: Februarie 2026",
     "contact_note": "Pentru orice întrebări legate de această politică, contactează-ne la",
@@ -294,7 +294,7 @@
     "section_4_text": "Ai dreptul de a accesa, corecta sau șterge datele tale personale în orice moment. Poți retrage și consimțământul pentru cookie-urile neesențiale. Pentru a exercita aceste drepturi, te rugăm să ne contactezi prin email."
   },
   "terms": {
-    "title": "Termeni și Condiții",
+    "title": "Termeni și condiții",
     "back": "Înapoi la pagina principală",
     "last_updated": "Ultima actualizare: Februarie 2026",
     "contact_note": "Pentru orice întrebări legate de acești termeni, contactează-ne la",
