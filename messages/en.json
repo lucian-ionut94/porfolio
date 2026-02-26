@@ -173,6 +173,7 @@
     "name": "Name",
     "email": "Email",
     "message": "Message",
+    "phone": "Phone Number",
     "project_type": "Project Type",
     "project_types": {
       "prezentare": "Presentation Website",

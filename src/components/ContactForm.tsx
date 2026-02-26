@@ -18,6 +18,7 @@ declare global {
 interface FormErrors {
   name?: string;
   email?: string;
+  phone?: string;
   message?: string;
 }
 
@@ -27,6 +28,7 @@ export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     projectType: "",
     budget: "",
     message: "",
@@ -67,6 +69,10 @@ export default function ContactForm() {
       locale === "ro"
         ? "Adresă de email invalidă"
         : "Invalid email address",
+    phone:
+      locale === "ro"
+        ? "Număr de telefon invalid"
+        : "Invalid phone number",
     message:
       locale === "ro"
         ? "Mesajul trebuie să aibă cel puțin 10 caractere"
@@ -79,6 +85,8 @@ export default function ContactForm() {
       if (formData.name.trim().length < 2) newErrors.name = ERR.name;
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email.trim()))
         newErrors.email = ERR.email;
+      if (!/^[+\d\s\-().]{7,}$/.test(formData.phone.trim()))
+        newErrors.phone = ERR.phone;
     }
     if (step === 2) {
       if (formData.message.trim().length < 10) newErrors.message = ERR.message;
@@ -140,6 +148,21 @@ export default function ContactForm() {
             />
             {errors.email && (
               <p className="mt-1.5 text-xs text-error">{errors.email}</p>
+            )}
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-muted mb-2">
+              {t("phone")}
+            </label>
+            <input
+              type="tel"
+              value={formData.phone}
+              onChange={(e) => update("phone", e.target.value)}
+              className={input(!!errors.phone)}
+              placeholder="+40 700 000 000"
+            />
+            {errors.phone && (
+              <p className="mt-1.5 text-xs text-error">{errors.phone}</p>
             )}
           </div>
         </div>
@@ -230,6 +253,12 @@ export default function ContactForm() {
                 </p>
               </div>
               <div>
+                <span className="text-muted">{t("phone")}:</span>
+                <p className="text-foreground font-medium">
+                  {formData.phone || "—"}
+                </p>
+              </div>
+              <div>
                 <span className="text-muted">{t("project_type")}:</span>
                 <p className="text-foreground font-medium">
                   {formData.projectType
@@ -289,6 +318,7 @@ export default function ContactForm() {
         {
           from_name: formData.name,
           from_email: formData.email,
+          from_phone: formData.phone,
           project_type: formData.projectType,
           budget: formData.budget,
           message: formData.message,

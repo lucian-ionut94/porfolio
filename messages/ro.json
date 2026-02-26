@@ -173,6 +173,7 @@
     "name": "Nume",
     "email": "Email",
     "message": "Mesaj",
+    "phone": "Număr de Telefon",
     "project_type": "Tip Proiect",
     "project_types": {
       "prezentare": "Site Prezentare",
