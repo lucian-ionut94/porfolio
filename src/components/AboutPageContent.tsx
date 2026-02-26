@@ -382,7 +382,7 @@ export default function AboutPageContent({ experiences = [], aboutImage }: About
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <Breadcrumb currentPage={t("title")} />
         {/* Hero section — photo 1/3 left, text 2/3 right */}
-        <div className="flex flex-col lg:grid lg:grid-cols-3 items-center lg:items-stretch gap-12 lg:gap-16 mb-20">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-3 items-center lg:items-stretch gap-12 lg:gap-16 mb-20">
           {/* Left 1/3: Photo + Rotating badge */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
