@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { requireAdmin } from "@/lib/admin-auth";
 import { createAdminSupabaseClient } from "@/lib/supabase/admin";
+import { revalidateTestimonials } from "@/lib/revalidate";
 
 export async function PUT(
   request: Request,
@@ -20,6 +21,7 @@ export async function PUT(
       .single();
 
     if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+    revalidateTestimonials();
     return NextResponse.json(data);
   } catch {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
@@ -37,6 +39,7 @@ export async function DELETE(
 
     const { error } = await supabase.from("testimonials").delete().eq("id", id);
     if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+    revalidateTestimonials();
     return NextResponse.json({ success: true });
   } catch {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });

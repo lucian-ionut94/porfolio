@@ -37,6 +37,20 @@ export function revalidatePageSeo() {
 }
 
 /**
+ * Revalidate all frontend pages that display testimonial data.
+ */
+export function revalidateTestimonials() {
+  revalidatePath("/[locale]", "page");
+}
+
+/**
+ * Revalidate all frontend pages that display experience data.
+ */
+export function revalidateExperiences() {
+  revalidatePath("/[locale]/about", "page");
+}
+
+/**
  * Revalidate everything.
  */
 export function revalidateAll() {

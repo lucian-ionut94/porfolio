@@ -235,7 +235,7 @@ export default function ExpertiseSection({ expertiseImages }: ExpertiseSectionPr
                           <p className="text-sm text-[#e5e5e5] leading-relaxed mb-3">
                             {t(`${item.key}_desc`)}
                           </p>
-                          <div className="flex flex-wrap gap-2">
+                          <div className="flex flex-wrap gap-2 mb-4">
                             {skills.map((skill) => (
                               <span
                                 key={skill}
@@ -245,6 +245,15 @@ export default function ExpertiseSection({ expertiseImages }: ExpertiseSectionPr
                               </span>
                             ))}
                           </div>
+                          {imageMap[item.key] && (
+                            <div className="lg:hidden rounded-xl overflow-hidden aspect-[4/3]">
+                              <img
+                                src={imageMap[item.key]}
+                                alt={t(item.key)}
+                                className="w-full h-full object-cover"
+                              />
+                            </div>
+                          )}
                         </div>
                       </motion.div>
                     )}
