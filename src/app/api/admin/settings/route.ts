@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { requireAdmin } from "@/lib/admin-auth";
 import { createAdminSupabaseClient } from "@/lib/supabase/admin";
+import { revalidateSettings } from "@/lib/revalidate";
 
 export async function GET() {
   try {
@@ -36,6 +37,7 @@ export async function PUT(request: Request) {
       .upsert(rows, { onConflict: "key" });
 
     if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+    revalidateSettings();
     return NextResponse.json({ success: true });
   } catch {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });

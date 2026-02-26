@@ -37,6 +37,14 @@ export function revalidatePageSeo() {
 }
 
 /**
+ * Revalidate all frontend pages affected by site settings changes.
+ */
+export function revalidateSettings() {
+  revalidatePath("/[locale]", "page");
+  revalidatePath("/[locale]/about", "page");
+}
+
+/**
  * Revalidate all frontend pages that display testimonial data.
  */
 export function revalidateTestimonials() {
