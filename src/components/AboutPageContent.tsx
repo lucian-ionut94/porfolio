@@ -12,26 +12,22 @@ import { Breadcrumb } from "./Breadcrumb";
 import type { Experience } from "@/lib/queries/experiences";
 
 const techLogos = [
-  { name: "Cypress", color: "#69D3A7" },
-  { name: "Docker", color: "#2496ED" },
-  { name: "Firebase", color: "#FFCA28" },
-  { name: "AWS", color: "#FF9900" },
-  { name: "GSAP", color: "#88CE02" },
-  { name: "Framer Motion", color: "#0055FF" },
-  { name: "Figma", color: "#F24E1E" },
-  { name: "Tailwind CSS", color: "#06B6D4" },
-  { name: "GIT", color: "#F05032" },
   { name: "HTML", color: "#E34F26" },
   { name: "CSS", color: "#1572B6" },
   { name: "JavaScript", color: "#F7DF1E" },
   { name: "TypeScript", color: "#3178C6" },
+  { name: "PHP", color: "#777BB4" },
+  { name: "Laravel", color: "#FF2D20" },
   { name: "React.js", color: "#61DAFB" },
   { name: "Next.js", color: "#ffffff" },
-  { name: "Angular", color: "#DD0031" },
-  { name: "Redux", color: "#764ABC" },
-  { name: "Node.js", color: "#339933" },
-  { name: "Express.js", color: "#ffffff" },
-  { name: "MySQL", color: "#4479A1" },
+  { name: "WordPress", color: "#21759B" },
+  { name: "OpenCart", color: "#7DC6D4" },
+  { name: "Bootstrap", color: "#7952B3" },
+  { name: "Tailwind CSS", color: "#06B6D4" },
+  { name: "Figma", color: "#F24E1E" },
+  { name: "Photoshop", color: "#31A8FF" },
+  { name: "GitHub", color: "#ffffff" },
+  { name: "Vercel", color: "#ffffff" },
 ];
 
 
