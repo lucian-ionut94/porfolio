@@ -43,8 +43,8 @@ export default function Hero() {
 
         {/* Heading - 75% width */}
         <h1
-          className="font-display text-[2.1875rem] sm:text-[3.5rem] lg:text-[4rem] xl:text-[4.5rem] font-medium leading-[1.05] tracking-tight mb-8 lg:w-3/4 animate-fade-up"
-          style={{ animationDelay: "200ms" }}
+          className="font-display text-[3.5rem] font-medium leading-[1.05] tracking-tight mb-8 animate-fade-up"
+          style={{ animationDelay: "200ms", maxWidth: "800px" }}
         >
           {t("heading_1")}
           <span className="text-primary">{t("heading_highlight")}</span>
