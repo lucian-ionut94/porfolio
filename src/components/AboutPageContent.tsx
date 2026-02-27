@@ -414,7 +414,7 @@ export default function AboutPageContent({ experiences = [], aboutImage }: About
             transition={{ duration: 0.7, delay: 0.2 }}
             className="col-span-2 flex flex-col justify-center"
           >
-            <h1 className="font-display text-[3.5rem] font-medium leading-[1.05] tracking-tight mb-8" style={{ maxWidth: "800px" }}>
+            <h1 className="font-display text-[1.17rem] md:text-[3.5rem] font-medium leading-[1.05] tracking-tight mb-8" style={{ maxWidth: "800px" }}>
               {t("hero_heading_1")}
               <span className="text-primary">{t("hero_highlight")}</span>
               {t("hero_heading_2")}
