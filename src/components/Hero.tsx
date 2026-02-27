@@ -43,7 +43,7 @@ export default function Hero() {
 
         {/* Heading - 75% width */}
         <h1
-          className="font-display text-[1.17rem] md:text-[3.5rem] font-medium leading-[1.05] tracking-tight mb-8 animate-fade-up"
+          className="font-display text-[1.8rem] md:text-[3.5rem] font-medium leading-[1.05] tracking-tight mb-8 animate-fade-up"
           style={{ animationDelay: "200ms", maxWidth: "800px" }}
         >
           {t("heading_1")}
