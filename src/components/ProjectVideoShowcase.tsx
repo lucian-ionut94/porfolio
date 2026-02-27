@@ -67,7 +67,7 @@ export default function ProjectVideoShowcase({
               </div>
               <div className="flex-1 mx-4">
                 <div className="bg-[#0a0a0a] rounded-md px-3 py-1.5 text-[11px] text-muted font-mono truncate text-center">
-                  {title.toLowerCase().replace(/\s+/g, "-")}.com
+                  {title.toLowerCase().replace(/\s+/g, "-")}.ro
                 </div>
               </div>
             </div>

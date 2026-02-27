@@ -250,6 +250,8 @@ export default function ExpertiseSection({ expertiseImages }: ExpertiseSectionPr
                               <img
                                 src={imageMap[item.key]}
                                 alt={t(item.key)}
+                                width={800}
+                                height={600}
                                 className="w-full h-full object-cover"
                               />
                             </div>
@@ -290,6 +292,8 @@ export default function ExpertiseSection({ expertiseImages }: ExpertiseSectionPr
                         <img
                           src={customImage}
                           alt={t(current.key)}
+                          width={800}
+                          height={600}
                           className="w-full h-full object-cover"
                         />
                       ) : (

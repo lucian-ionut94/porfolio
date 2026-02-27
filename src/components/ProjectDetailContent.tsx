@@ -99,6 +99,7 @@ export default function ProjectDetailContent({
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  title={t("live_preview")}
                   className="inline-flex items-center gap-2 px-6 py-2.5 text-sm font-semibold border border-white/20 text-foreground rounded-full transition-all duration-300 hover:bg-white/5 hover:scale-105"
                 >
                   {t("live_preview")}
@@ -110,6 +111,7 @@ export default function ProjectDetailContent({
                   href={project.sourceUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  title={t("source_code")}
                   className="inline-flex items-center gap-2 px-6 py-2.5 text-sm font-semibold border border-white/20 text-foreground rounded-full transition-all duration-300 hover:bg-white/5 hover:scale-105"
                 >
                   {t("source_code")}
@@ -155,7 +157,7 @@ export default function ProjectDetailContent({
             className={`relative mt-12 h-48 sm:h-64 lg:h-80 rounded-2xl overflow-hidden flex items-center justify-center ${!project.featureImage ? project.bgColor : ""}`}
           >
             {project.featureImage ? (
-              <img src={project.featureImage} alt={project.title} className="absolute inset-0 w-full h-full object-cover" />
+              <img src={project.featureImage} alt={project.title} width={1280} height={720} className="absolute inset-0 w-full h-full object-cover object-top" />
             ) : (
               <span
                 className={`text-8xl sm:text-9xl lg:text-[12rem] font-bold opacity-20 ${project.letterColor} select-none`}
@@ -278,6 +280,7 @@ export default function ProjectDetailContent({
               {prevProject && (
                 <Link
                   href={{ pathname: "/portfolio/[slug]", params: { slug: (locale === "ro" ? prevProject.slugRo : prevProject.slugEn) || prevProject.slug } }}
+                  title={prevProject.title}
                   className="group flex items-center gap-3 text-muted hover:text-foreground transition-colors"
                 >
                   <svg
@@ -307,6 +310,7 @@ export default function ProjectDetailContent({
             {/* Back to all */}
             <Link
               href="/portfolio"
+              title={t("back_to_all")}
               className="inline-flex items-center justify-center px-6 py-2.5 text-xs font-semibold border border-white/20 text-foreground rounded-full transition-all duration-300 hover:bg-white/5"
             >
               {t("back_to_all")}
@@ -317,6 +321,7 @@ export default function ProjectDetailContent({
               {nextProject && (
                 <Link
                   href={{ pathname: "/portfolio/[slug]", params: { slug: (locale === "ro" ? nextProject.slugRo : nextProject.slugEn) || nextProject.slug } }}
+                  title={nextProject.title}
                   className="group inline-flex items-center gap-3 text-muted hover:text-foreground transition-colors"
                 >
                   <div>

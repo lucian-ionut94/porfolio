@@ -89,6 +89,7 @@ export default function RecentArticles({ articles: propArticles }: { articles?: 
               >
                 <Link
                   href={{ pathname: "/blog/[slug]", params: { slug: (locale === "ro" ? article.slugRo : article.slugEn) || article.slug } }}
+                  title={locale === "ro" ? article.title_ro : article.title_en}
                   className="block rounded-2xl border border-border bg-surface overflow-hidden h-full flex flex-col transition-all duration-300 group-hover:border-primary/30 group-hover:scale-[1.02]"
                 >
                   {/* Feature image area */}
@@ -97,7 +98,7 @@ export default function RecentArticles({ articles: propArticles }: { articles?: 
                     style={!article.featureImage ? { background: `linear-gradient(135deg, ${article.bgFrom} 0%, ${article.bgTo} 100%)` } : undefined}
                   >
                     {article.featureImage ? (
-                      <img src={article.featureImage} alt={locale === "ro" ? article.title_ro : article.title_en} className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                      <img src={article.featureImage} alt={locale === "ro" ? article.title_ro : article.title_en} width={800} height={500} className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                     ) : (
                       <>
                         <div className="absolute inset-0 opacity-[0.07]" style={{ backgroundImage: "radial-gradient(circle, white 1px, transparent 1px)", backgroundSize: "20px 20px" }} />
@@ -151,6 +152,7 @@ export default function RecentArticles({ articles: propArticles }: { articles?: 
           <Magnet strength={0.15} range={120}>
             <Link
               href="/blog"
+              title={t("view_all")}
               className="inline-block px-8 py-3 text-sm font-semibold text-foreground border border-white/80 rounded-full transition-all duration-300 hover:bg-white hover:text-black hover:scale-105"
             >
               {t("view_all")}

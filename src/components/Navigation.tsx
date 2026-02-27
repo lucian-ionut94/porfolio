@@ -46,7 +46,7 @@ export default function Navigation() {
       <div className="max-w-6xl mx-auto px-6 sm:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="group flex items-center gap-2">
+          <Link href="/" title="Acasă" className="group flex items-center gap-2">
             <div className="relative w-9 h-9">
               {/* Shield / terminal hybrid shape */}
               <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
@@ -99,6 +99,7 @@ export default function Navigation() {
                 <Link
                   key={link.key}
                   href={link.href}
+                  title={t(link.key)}
                   className={`relative mr-[10px] px-4 py-2 text-sm transition-colors duration-200 ${
                     isActive ? "text-foreground" : "text-muted hover:text-foreground"
                   }`}
@@ -160,6 +161,7 @@ export default function Navigation() {
                   <Link
                     key={link.key}
                     href={link.href}
+                    title={t(link.key)}
                     onClick={() => setMobileOpen(false)}
                     className={`block px-3 py-2.5 text-sm transition-colors ${
                       isActive ? "text-primary" : "text-muted hover:text-foreground"

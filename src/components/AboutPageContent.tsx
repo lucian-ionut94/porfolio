@@ -392,6 +392,8 @@ export default function AboutPageContent({ experiences = [], aboutImage }: About
                 <img
                   src={aboutImage}
                   alt="Lucian Ionuț — Developer"
+                  width={400}
+                  height={533}
                   className="w-full h-full object-cover"
                 />
               ) : (
@@ -430,6 +432,7 @@ export default function AboutPageContent({ experiences = [], aboutImage }: About
                   href="https://www.linkedin.com/in/lucian-ardeleanu-04977a140/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  title="LinkedIn"
                   className="group relative inline-block rounded-full border border-white/80 px-8 py-3 text-sm font-semibold text-foreground overflow-hidden transition-transform duration-[400ms] hover:scale-x-[1.02] hover:duration-[600ms]"
                 >
                   <span className="absolute inset-x-0 bottom-0 h-full bg-white rounded-none transition-all duration-500 ease-[cubic-bezier(0.4,0,0,1)] translate-y-full group-hover:translate-y-0" />
@@ -537,6 +540,8 @@ export default function AboutPageContent({ experiences = [], aboutImage }: About
                       <img
                         src={exp.logo_url}
                         alt={exp.company}
+                        width={40}
+                        height={40}
                         className="w-full h-full object-cover rounded-full"
                       />
                     ) : (

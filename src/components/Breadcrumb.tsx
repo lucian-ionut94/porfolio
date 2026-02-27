@@ -32,7 +32,7 @@ export function Breadcrumb({ currentPage, parentPage, parentHref }: BreadcrumbPr
     >
       <ol className="flex items-center gap-2 text-xs text-muted font-mono">
         <li>
-          <Link href="/" className="hover:text-primary transition-colors">
+          <Link href="/" title={tNav("home")} className="hover:text-primary transition-colors">
             {tNav("home")}
           </Link>
         </li>
@@ -40,7 +40,7 @@ export function Breadcrumb({ currentPage, parentPage, parentHref }: BreadcrumbPr
         {parentPage && parentHref ? (
           <>
             <li>
-              <Link href={parentHref} className="hover:text-primary transition-colors">
+              <Link href={parentHref} title={parentPage} className="hover:text-primary transition-colors">
                 {parentPage}
               </Link>
             </li>

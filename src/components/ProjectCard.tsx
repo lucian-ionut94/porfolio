@@ -68,6 +68,7 @@ export default function ProjectCard({ project, index }: Props) {
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
+            title={t("view_project")}
             className="inline-flex items-center gap-1.5 text-sm text-primary hover:text-primary-light transition-colors"
           >
             <svg
@@ -89,6 +90,7 @@ export default function ProjectCard({ project, index }: Props) {
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
+            title={t("view_code")}
             className="inline-flex items-center gap-1.5 text-sm text-muted hover:text-foreground transition-colors"
           >
             <svg

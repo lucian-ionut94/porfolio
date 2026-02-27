@@ -49,6 +49,7 @@ export default function CTASection() {
             <StarBorder color="#a3e635" speed="5s">
               <Link
                 href="/contact"
+                title={t("button")}
                 className="block px-8 py-3 text-sm font-medium text-foreground hover:text-primary transition-colors duration-300"
               >
                 {t("button")}

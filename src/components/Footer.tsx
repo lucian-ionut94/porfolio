@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8 py-14">
           {/* Brand column */}
           <div className="md:col-span-5">
-            <Link href="/" className="inline-flex items-center gap-2.5 mb-4 group">
+            <Link href="/" title="Lucian Ionuț — Web Developer" className="inline-flex items-center gap-2.5 mb-4 group">
               <div className="w-8 h-8">
                 <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
                   <path d="M18 2L4 8v10c0 9.05 5.97 17.52 14 20 8.03-2.48 14-10.95 14-20V8L18 2z" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-white/20 group-hover:text-primary/40 transition-colors duration-300" />
@@ -55,6 +55,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="w-9 h-9 rounded-full border border-border flex items-center justify-center text-[#a9a9bd] hover:text-primary hover:border-primary/30 transition-all duration-300"
                   aria-label={social.name}
+                  title={social.name}
                 >
                   {social.icon}
                 </a>
@@ -72,6 +73,7 @@ export default function Footer() {
                 <li key={link.key}>
                   <Link
                     href={link.href}
+                    title={t(link.key)}
                     className="text-[15px] text-[#a9a9bd] hover:text-foreground transition-colors duration-200"
                   >
                     {t(link.key)}
@@ -91,6 +93,7 @@ export default function Footer() {
                 <li key={link.key}>
                   <Link
                     href={link.href}
+                    title={t(link.key)}
                     className="text-[15px] text-[#a9a9bd] hover:text-foreground transition-colors duration-200"
                   >
                     {t(link.key)}
@@ -109,6 +112,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:ardeleanulucianionut@gmail.com"
+                  title="Trimite un email"
                   className="text-[15px] text-[#a9a9bd] hover:text-foreground transition-colors duration-200"
                 >
                   ardeleanulucianionut@gmail.com

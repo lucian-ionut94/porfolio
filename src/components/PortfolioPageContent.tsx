@@ -121,13 +121,13 @@ export default function PortfolioPageContent({ projects: propProjects }: { proje
                   index % 2 === 1 ? "sm:mt-[50px]" : ""
                 }`}
               >
-                <Link href={{ pathname: "/portfolio/[slug]", params: { slug: (locale === "ro" ? project.slugRo : project.slugEn) || project.slug } }} className="block">
+                <Link href={{ pathname: "/portfolio/[slug]", params: { slug: (locale === "ro" ? project.slugRo : project.slugEn) || project.slug } }} title={project.title} className="block">
                   {/* Card image area */}
                   <div
                     className={`relative h-56 sm:h-64 lg:h-72 rounded-2xl overflow-hidden flex items-center justify-center transition-transform duration-500 group-hover:scale-[1.02] ${!project.featureImage ? project.bgColor : ""}`}
                   >
                     {project.featureImage ? (
-                      <img src={project.featureImage} alt={project.title} className="absolute inset-0 w-full h-full object-cover" />
+                      <img src={project.featureImage} alt={project.title} width={800} height={600} className="absolute inset-0 w-full h-full object-cover object-top" />
                     ) : (
                       <span
                         className={`text-7xl sm:text-8xl lg:text-9xl font-bold opacity-20 ${project.letterColor} select-none`}

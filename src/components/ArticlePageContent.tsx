@@ -68,7 +68,7 @@ export default function ArticlePageContent({ article, articles: propArticles }: 
           style={!article.featureImage ? { background: `linear-gradient(135deg, ${article.bgFrom} 0%, ${article.bgTo} 100%)` } : undefined}
         >
           {article.featureImage ? (
-            <img src={article.featureImage} alt={title} className="absolute inset-0 w-full h-full object-cover" />
+            <img src={article.featureImage} alt={title} width={1280} height={720} className="absolute inset-0 w-full h-full object-cover" />
           ) : (
             <>
               <div className="absolute inset-0 opacity-[0.07]" style={{ backgroundImage: "radial-gradient(circle, white 1px, transparent 1px)", backgroundSize: "24px 24px" }} />
@@ -132,6 +132,7 @@ export default function ArticlePageContent({ article, articles: propArticles }: 
                     <Link
                       key={r.id}
                       href={{ pathname: "/blog/[slug]", params: { slug: (locale === "ro" ? r.slugRo : r.slugEn) || r.slug } }}
+                      title={locale === "ro" ? r.title_ro : r.title_en}
                       className="group p-4 rounded-xl border border-border bg-surface hover:border-primary/30 transition-all duration-300"
                     >
                       <span className="text-xs text-muted font-mono">
@@ -183,6 +184,7 @@ export default function ArticlePageContent({ article, articles: propArticles }: 
                     rel="noopener noreferrer"
                     className="w-8 h-8 rounded-lg border border-border flex items-center justify-center text-muted hover:text-primary hover:border-primary/30 transition-all"
                     aria-label={social.name}
+                    title={social.name}
                   >
                     <span className="w-[14px] h-[14px] flex items-center justify-center [&>svg]:w-full [&>svg]:h-full">
                       {social.icon}
@@ -194,8 +196,8 @@ export default function ArticlePageContent({ article, articles: propArticles }: 
 
             {/* Ad banner */}
             {article.adImage && article.adLink ? (
-              <a href={article.adLink} target="_blank" rel="noopener noreferrer" className="block rounded-2xl border border-border bg-surface overflow-hidden hover:border-primary/30 transition-all">
-                <img src={article.adImage} alt="Ad" className="w-full h-auto" />
+              <a href={article.adLink} target="_blank" rel="noopener noreferrer" title="Sponsor" className="block rounded-2xl border border-border bg-surface overflow-hidden hover:border-primary/30 transition-all">
+                <img src={article.adImage} alt="Ad" width={640} height={400} className="w-full h-auto" />
               </a>
             ) : (
               <div className="rounded-2xl border border-border bg-surface overflow-hidden">
@@ -217,6 +219,7 @@ export default function ArticlePageContent({ article, articles: propArticles }: 
                   </p>
                   <Link
                     href="/contact"
+                    title={locale === "ro" ? "Contactează-mă" : "Contact Me"}
                     className="relative mt-1 px-4 py-1.5 text-[10px] font-medium rounded-full border border-primary/30 text-primary hover:bg-primary/10 transition-colors"
                   >
                     {locale === "ro" ? "Contactează-mă" : "Contact Me"}
@@ -228,6 +231,7 @@ export default function ArticlePageContent({ article, articles: propArticles }: 
             {/* Back to blog */}
             <Link
               href="/blog"
+              title={locale === "ro" ? "Toate articolele" : "All Articles"}
               className="flex items-center gap-2 text-sm text-muted hover:text-primary transition-colors group"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:-translate-x-1" aria-hidden="true">

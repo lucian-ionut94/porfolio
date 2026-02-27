@@ -81,6 +81,7 @@ export default function Hero() {
                   rel="noopener noreferrer"
                   className="opacity-container-child w-9 h-9 rounded-full border border-border flex items-center justify-center text-[#a9a9bd] hover:text-primary hover:border-primary/30 transition-all duration-300"
                   aria-label={social.name}
+                  title={social.name}
                 >
                   {social.icon}
                 </a>
@@ -92,6 +93,7 @@ export default function Hero() {
           <Magnet strength={0.15} range={120}>
             <Link
               href="/about"
+              title={t("cta")}
               className="group relative inline-block rounded-full border border-white/80 px-8 py-3 text-sm font-semibold text-foreground overflow-hidden transition-transform duration-[400ms] hover:scale-x-[1.02] hover:duration-[600ms]"
             >
               <span className="absolute inset-x-0 bottom-0 h-full bg-white rounded-none transition-all duration-500 ease-[cubic-bezier(0.4,0,0,1)] translate-y-full group-hover:translate-y-0" />

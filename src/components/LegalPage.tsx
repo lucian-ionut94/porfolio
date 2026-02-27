@@ -16,6 +16,7 @@ export default function LegalPage({ pageKey }: LegalPageProps) {
       <div className="max-w-3xl mx-auto px-6 sm:px-8">
         <Link
           href="/"
+          title={t("back")}
           className="inline-flex items-center gap-2 text-sm text-[#a9a9bd] hover:text-foreground transition-colors mb-8"
         >
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
@@ -47,7 +48,7 @@ export default function LegalPage({ pageKey }: LegalPageProps) {
         <div className="mt-12 pt-8 border-t border-border">
           <p className="text-sm text-[#a9a9bd]">
             {t("contact_note")}{" "}
-            <a href="mailto:ardeleanulucianionut@gmail.com" className="text-primary hover:underline">
+            <a href="mailto:ardeleanulucianionut@gmail.com" title="Trimite un email" className="text-primary hover:underline">
               ardeleanulucianionut@gmail.com
             </a>
           </p>

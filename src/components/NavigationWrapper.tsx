@@ -90,6 +90,7 @@ export default function NavigationWrapper() {
           {/* Logo */}
           <Link
             href="/"
+            title="Acasă"
             className={`group flex items-center gap-1.5 shrink-0 transition-all duration-500`}
           >
             <div className={`transition-all duration-500 ${scrolled ? "w-7 h-7" : "w-8 h-8"}`}>
@@ -132,6 +133,7 @@ export default function NavigationWrapper() {
                 <Link
                   key={item.key}
                   href={item.href}
+                  title={label}
                   ref={(el) => {
                     linksRef.current[i] = el;
                   }}
@@ -158,6 +160,7 @@ export default function NavigationWrapper() {
           <div className="flex items-center gap-3">
             <Link
               href="/blog"
+              title="Blog"
               className={`md:hidden flex items-center gap-1.5 text-muted hover:text-primary transition-all duration-300 ${
                 pathname.startsWith("/blog") ? "text-primary" : ""
               }`}
@@ -198,6 +201,7 @@ export default function NavigationWrapper() {
             <Link
               key={item.key}
               href={item.href}
+              title={t(item.key)}
               className={`flex flex-col items-center gap-1 px-3 py-1 transition-colors ${
                 isActive ? "text-primary" : "text-muted"
               }`}

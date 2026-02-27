@@ -263,6 +263,7 @@ export default function ContactPageContent() {
                     rel="noopener noreferrer"
                     className="w-10 h-10 rounded-lg border border-border bg-surface flex items-center justify-center text-muted hover:text-primary hover:border-primary/30 transition-all duration-300"
                     aria-label={social.name}
+                    title={social.name}
                   >
                     {social.icon}
                   </a>

@@ -161,6 +161,7 @@ export default function TestimonialsSection({ testimonials: propTestimonials }: 
                 href={linkedInLink.href}
                 target="_blank"
                 rel="noopener noreferrer"
+                title="LinkedIn"
                 className="underline-link font-sans text-[14px] text-white hover:text-white transition-colors inline-flex items-center gap-1.5 mt-4"
               >
                 {t("check_linkedin")}
@@ -193,6 +194,8 @@ export default function TestimonialsSection({ testimonials: propTestimonials }: 
                       <img
                         src={testimonials[current].avatar_url}
                         alt={testimonials[current].name}
+                        width={64}
+                        height={64}
                         className="h-16 w-16 min-w-fit rounded-full object-cover"
                       />
                     ) : (
@@ -234,6 +237,7 @@ export default function TestimonialsSection({ testimonials: propTestimonials }: 
                         href={testimonials[current].link_url}
                         target="_blank"
                         rel="noopener noreferrer"
+                        title={`LinkedIn — ${testimonials[current].name}`}
                         className="inline-flex items-center gap-1 text-[12px] text-primary hover:text-primary/80 mt-0.5"
                       >
                         LinkedIn <ArrowUpRight />

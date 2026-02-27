@@ -98,6 +98,7 @@ export default function CookieConsent() {
                 {t("message")}{" "}
                 <Link
                   href="/privacy"
+                  title={t("privacy_policy")}
                   className="text-lime-400 hover:text-lime-300 underline underline-offset-2 transition-colors"
                 >
                   {t("privacy_policy")}

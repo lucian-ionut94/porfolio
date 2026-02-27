@@ -64,6 +64,7 @@ export default function FeaturedProjects({ projects: propProjects }: { projects?
             <Link
               key={project.id}
               href={{ pathname: "/portfolio/[slug]", params: { slug: (locale === "ro" ? project.slugRo : project.slugEn) || project.slug } }}
+              title={project.title}
               className={`group opacity-container-child transition-opacity duration-300 block ${index % 2 === 1 ? "mt-[50px]" : ""}`}
             >
               <motion.div
@@ -77,7 +78,7 @@ export default function FeaturedProjects({ projects: propProjects }: { projects?
                   className={`relative h-56 sm:h-64 lg:h-72 rounded-2xl overflow-hidden flex items-center justify-center transition-transform duration-500 group-hover:scale-[1.02] ${!project.featureImage ? project.bgColor : ""}`}
                 >
                   {project.featureImage ? (
-                    <img src={project.featureImage} alt={project.title} className="absolute inset-0 w-full h-full object-cover" />
+                    <img src={project.featureImage} alt={project.title} width={800} height={600} className="absolute inset-0 w-full h-full object-cover object-top" />
                   ) : (
                     <span
                       className={`text-7xl sm:text-8xl lg:text-9xl font-bold opacity-20 ${project.letterColor} select-none`}
@@ -120,6 +121,7 @@ export default function FeaturedProjects({ projects: propProjects }: { projects?
           <Magnet strength={0.15} range={120}>
             <Link
               href="/portfolio"
+              title={t("view_all")}
               className="inline-block px-8 py-3 text-sm font-semibold text-foreground border border-white/80 rounded-full transition-all duration-300 hover:bg-white hover:text-black hover:scale-105"
             >
               {t("view_all")}
