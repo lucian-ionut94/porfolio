@@ -226,7 +226,7 @@ export default function ProjectDetailContent({
 
         {/* Video Showcase — only if videos exist */}
         {(project.videoDesktop || project.videoMobile) && (
-          <section className="mb-16 md:mb-24 overflow-hidden">
+          <section className="mb-16 md:mb-24">
             <motion.h2
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}

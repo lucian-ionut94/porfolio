@@ -72,7 +72,7 @@ export default function ProjectVideoShowcase({
               </div>
             </div>
             {/* Video area */}
-            <div className="aspect-[16/10] bg-[#111]">
+            <div className="bg-[#111]">
               {isVisible && (
                 <video
                   ref={desktopVideoRef}
@@ -80,7 +80,7 @@ export default function ProjectVideoShowcase({
                   muted
                   loop
                   playsInline
-                  className="w-full h-full object-cover"
+                  className="w-full"
                   aria-label={`${title} desktop preview`}
                 />
               )}
